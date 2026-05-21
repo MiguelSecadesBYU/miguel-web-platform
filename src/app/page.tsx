@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
-import FeaturedBook from "@/components/FeaturedBook";
+import AboutAuthor from "@/components/AboutAuthor";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <FeaturedBook />
+      <AboutAuthor />
     </main>
   );
 }
