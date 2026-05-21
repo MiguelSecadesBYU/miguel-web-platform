@@ -12,19 +12,19 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-9 md:flex">
           <Link href="/" className="nav-link">
-            Home
+            Inicio
           </Link>
           <Link href="/books" className="nav-link">
-            Books
+            Libros
           </Link>
           <Link href="/blog" className="nav-link">
             Blog
           </Link>
           <Link href="/about" className="nav-link">
-            About
+            Autor
           </Link>
           <Link href="/contact" className="nav-link">
-            Contact
+            Contacto
           </Link>
         </div>
 
