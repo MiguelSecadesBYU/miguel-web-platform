@@ -18,7 +18,7 @@ export default function Navbar() {
             Libros
           </Link>
           <Link href="/blog" className="nav-link">
-            Blog
+            Tras las páginas
           </Link>
           <Link href="/about" className="nav-link">
             Autor
