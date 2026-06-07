@@ -25,7 +25,7 @@ const BIO_CORTA =
   "Miguel Secades García (Cornellana, Asturias, 1980) es autor de El Anillo de Salomón, su primera novela. Trabajó durante años en el sector informático antes de jubilarse anticipadamente. Es su debut en la ficción. Reside en Asturias.";
 
 const BIO_MEDIA =
-  "Miguel Secades García nació en Cornellana, Asturias, en 1980. Llegó al mundo con una cardiopatía congénita que le llevó al quirófano en tres ocasiones — a los dos años, a los trece y a los treinta y cuatro — y que marcó de forma decisiva su manera de entender el tiempo y el propósito. Tras una larga trayectoria profesional en el sector informático, se jubiló anticipadamente a los treinta y seis años. Fue entonces cuando empezó a escribir. El Anillo de Salomón, su primera novela, es un thriller arqueológico que mezcla historia antigua, símbolos y sociedades secretas en una carrera a través de Madrid, Jerusalén, Babilonia y Axum. Publicada en 2025 en Amazon KDP, está disponible en formato ebook y tapa blanda. Secades vive en Asturias y trabaja en su siguiente proyecto.";
+  "Miguel Secades García nació en Cornellana, Asturias, en 1980. Llegó al mundo con una cardiopatía congénita que le llevó al quirófano en tres ocasiones — a los dos años, a los trece y a los treinta y cuatro — y que marcó de forma decisiva su manera de entender el tiempo y el propósito. Tras una larga trayectoria profesional en el sector informático, se jubiló anticipadamente a los treinta y seis años. Fue entonces cuando empezó a escribir. El Anillo de Salomón, su primera novela, es un thriller arqueológico que mezcla historia antigua, símbolos y sociedades secretas en una carrera a través de Madrid, Jerusalén, Babilonia y Axum. Publicada en 2026 en Amazon KDP, está disponible en formato ebook y tapa blanda. Secades vive en Asturias y trabaja en su siguiente proyecto.";
 
 const timeline = [
   {
@@ -54,12 +54,12 @@ const timeline = [
     text: "Tras una larga carrera en el sector informático, la vida le entrega algo inesperado: tiempo. Empieza a escribir.",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "El regreso al manuscrito",
     text: "Retoma El Anillo de Salomón, que había quedado aparcado durante años. Esta vez, lo termina.",
   },
   {
-    year: "2025",
+    year: "2026",
     title: "Primera novela publicada",
     text: "El Anillo de Salomón sale al mundo. El comienzo de algo.",
   },
@@ -168,8 +168,8 @@ export default function AboutPage() {
             </p>
             <p>
               El manuscrito quedó aparcado durante años, como se aparca
-              cualquier cosa que da vértigo terminar. Hasta que en 2024 lo
-              retomó. Y esta vez sí: lo terminó. En 2025, su primera novela
+              cualquier cosa que da vértigo terminar. Hasta que en 2025 lo
+              retomó. Y esta vez sí: lo terminó. En 2026, su primera novela
               vio la luz.
             </p>
             <p className="text-stone-400">
@@ -224,7 +224,7 @@ export default function AboutPage() {
             {/* Bio corta */}
             <div className="border border-stone-800 bg-[#0d0d0d] p-8">
               <p className="mb-3 text-xs uppercase tracking-[0.25em] text-stone-500">
-                Versión corta · Para pie de foto y contraportada
+                Versión corta
               </p>
               <p className="text-sm leading-relaxed text-stone-400">
                 Miguel Secades García (Cornellana, Asturias, 1980) es autor de{" "}
@@ -238,7 +238,7 @@ export default function AboutPage() {
             {/* Bio media */}
             <div className="border border-stone-800 bg-[#0d0d0d] p-8">
               <p className="mb-3 text-xs uppercase tracking-[0.25em] text-stone-500">
-                Versión extendida · Para entrevistas, presentaciones y festivales
+                Versión extendida
               </p>
               <p className="text-sm leading-relaxed text-stone-400">
                 Miguel Secades García nació en Cornellana, Asturias, en 1980.
@@ -253,7 +253,7 @@ export default function AboutPage() {
                 <em>El Anillo de Salomón</em>, su primera novela, es un thriller
                 arqueológico que mezcla historia antigua, símbolos y sociedades
                 secretas en una carrera a través de Madrid, Jerusalén, Babilonia
-                y Axum. Publicada en 2025 en Amazon KDP, está disponible en
+                y Axum. Publicada en 2026 en Amazon KDP, está disponible en
                 formato ebook y tapa blanda. Secades vive en Asturias y trabaja
                 en su siguiente proyecto.
               </p>
