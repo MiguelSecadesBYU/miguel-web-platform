@@ -379,7 +379,7 @@ export default function PostAnilloSalomon() {
               <p>
                 ¿Qué pasaría si un arqueólogo encontrara un papiro sumerio que
                 mencionara el objeto? ¿Y si las pistas lo llevaran desde Madrid
-                hasta los archivos del Vaticano, las ruinas de Babilonia y la
+                hasta la ciudad santa de Jerusalén, las ruinas de Babilonia y la
                 mítica Axum —la ciudad etíope donde algunos sitúan el Arca de la
                 Alianza—? ¿Y si no fuera el único en buscarlo?
               </p>
