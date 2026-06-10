@@ -12,10 +12,10 @@ export default function Hero() {
         backgroundColor: "#000",
       }}
     >
-      {/* Overlay cinematográfico — más oscuro en móvil para legibilidad */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/60 sm:via-black/80 sm:to-transparent" />
+      {/* Overlay cinematográfico */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/30 sm:via-black/80 sm:to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-      <div className="absolute inset-0 bg-black/20 sm:bg-black/10" />
+      <div className="absolute inset-0 bg-black/10" />
 
       {/* Contenido */}
       <div className="relative z-10 mx-auto flex min-h-[calc(100vh-72px)] max-w-7xl items-center px-6 py-16 sm:min-h-[calc(100vh-88px)] sm:py-0 lg:px-12">
