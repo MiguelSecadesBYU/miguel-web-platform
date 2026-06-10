@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+const AUTHOR_EMAIL = "miguel.secades.garcia@gmail.com";
+
 export async function POST(req: NextRequest) {
   try {
     const { name, email, subject, message } = await req.json();
@@ -26,21 +28,37 @@ export async function POST(req: NextRequest) {
         "api-key": apiKey,
       },
       body: JSON.stringify({
-        sender: { name: "Web Miguel Secades", email: "miguelsecades@gmail.com" },
-        to: [{ email: "miguelsecades@gmail.com", name: "Miguel Secades" }],
+        sender: { name: "Web Miguel Secades", email: AUTHOR_EMAIL },
+        to: [{ email: AUTHOR_EMAIL, name: "Miguel Secades García" }],
         replyTo: { email, name },
-        subject: `[Web] ${subject}`,
+        subject: `[Web] ${subject} — ${name}`,
         htmlContent: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #f59e0b; border-bottom: 1px solid #333; padding-bottom: 12px;">
-              Nuevo mensaje desde miguelseacades.com
-            </h2>
-            <p><strong>Nombre:</strong> ${name}</p>
-            <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-            <p><strong>Asunto:</strong> ${subject}</p>
-            <div style="margin-top: 16px; padding: 16px; background: #111; border-left: 3px solid #f59e0b;">
-              <p style="white-space: pre-wrap; color: #ccc;">${message}</p>
+          <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; background: #0a0a0a; color: #ccc; padding: 32px;">
+            <div style="border-bottom: 1px solid #333; padding-bottom: 16px; margin-bottom: 24px;">
+              <h2 style="color: #f59e0b; font-weight: 300; font-size: 22px; margin: 0;">
+                Nuevo mensaje desde miguelseacades.com
+              </h2>
             </div>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
+              <tr>
+                <td style="padding: 8px 0; color: #666; width: 100px; font-size: 12px; text-transform: uppercase; letter-spacing: 2px;">Nombre</td>
+                <td style="padding: 8px 0; color: #eee;">${name}</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: #666; font-size: 12px; text-transform: uppercase; letter-spacing: 2px;">Email</td>
+                <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #f59e0b;">${email}</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: #666; font-size: 12px; text-transform: uppercase; letter-spacing: 2px;">Motivo</td>
+                <td style="padding: 8px 0; color: #eee;">${subject}</td>
+              </tr>
+            </table>
+            <div style="border-left: 3px solid #f59e0b; padding: 16px 20px; background: #111;">
+              <p style="white-space: pre-wrap; color: #bbb; line-height: 1.7; margin: 0;">${message}</p>
+            </div>
+            <p style="margin-top: 24px; font-size: 11px; color: #444;">
+              Responde directamente a este email para contactar con ${name}.
+            </p>
           </div>
         `,
       }),
