@@ -12,7 +12,7 @@ const RESPONSIBLE_NAME = "Miguel Secades García";
 const EMAIL = "miguel.secades.garcia@gmail.com";
 const ADDRESS = "Gijón, Asturias, España";
 const NIF = "Disponible ante requerimiento de autoridad competente o solicitud legítima.";
-const DOMAIN = "miguelsecades.com";
+const DOMAIN = "www.miguelsecades.com";
 
 export default function TermsPage() {
   return (

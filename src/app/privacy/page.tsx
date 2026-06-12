@@ -35,7 +35,7 @@ export default function PrivacyPage() {
               <DataBox items={[
                 { label: "Nombre", value: RESPONSIBLE_NAME },
                 { label: "Correo electrónico", value: EMAIL },
-                { label: "Sitio web", value: "https://miguelsecades.com" },
+                { label: "Sitio web", value: "https://www.miguelsecades.com" },
               ]} />
             </LegalSection>
 
