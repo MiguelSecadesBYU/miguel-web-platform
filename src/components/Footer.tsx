@@ -154,7 +154,7 @@ export default function Footer() {
               Política de privacidad
             </Link>
             <Link href="/terms" className="transition hover:text-amber-400">
-              Términos de uso
+              Aviso legal y términos de uso
             </Link>
           </div>
         </div>

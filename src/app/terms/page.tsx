@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Aviso Legal y Términos de Uso",
-  description: "Aviso legal y condiciones de uso de miguelseacades.com conforme a la LSSI-CE.",
+  description: "Aviso legal y condiciones de uso de miguelsecades.com conforme a la LSSI-CE.",
 };
 
 const LAST_UPDATE = "Junio 2026";
 const RESPONSIBLE_NAME = "Miguel Secades García";
 const EMAIL = "miguel.secades.garcia@gmail.com";
-const ADDRESS = "Gijón, Asturias, España"; 
-const NIF = "Disponible ante requerimiento de autoridad competente o solicitud legítima."
-const DOMAIN = "miguel-web-platform.vercel.app";
+const ADDRESS = "Gijón, Asturias, España";
+const NIF = "Disponible ante requerimiento de autoridad competente o solicitud legítima.";
+const DOMAIN = "miguelsecades.com";
 
 export default function TermsPage() {
   return (
@@ -38,7 +39,7 @@ export default function TermsPage() {
               <DataBox items={[
                 { label: "Nombre completo", value: RESPONSIBLE_NAME },
                 { label: "NIF", value: NIF },
-                { label: "Domicilio", value: ADDRESS },
+                { label: "Residencia", value: ADDRESS },
                 { label: "Correo electrónico", value: EMAIL },
                 { label: "Sitio web", value: `https://${DOMAIN}` },
               ]} />
@@ -130,7 +131,7 @@ export default function TermsPage() {
   );
 }
 
-function LegalSection({ title, children }: { title: string; children: React.ReactNode }) {
+function LegalSection({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="space-y-4">
       <h2 className="font-serif text-xl font-light text-stone-200">{title}</h2>
