@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 const LAST_UPDATE = "Junio 2026";
 const RESPONSIBLE_NAME = "Miguel Secades García";
 const EMAIL = "miguel.secades.garcia@gmail.com";
-const ADDRESS = "Gijón, Asturias, España"; // r
+const ADDRESS = "Gijón, Asturias, España"; 
+const NIF = "Disponible ante requerimiento de autoridad competente o solicitud legítima."
 const DOMAIN = "miguel-web-platform.vercel.app";
 
 export default function TermsPage() {
@@ -36,6 +37,7 @@ export default function TermsPage() {
               <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa que el titular del sitio web <strong className="text-stone-300">{DOMAIN}</strong> es:</p>
               <DataBox items={[
                 { label: "Nombre completo", value: RESPONSIBLE_NAME },
+                { label: "NIF", value: NIF },
                 { label: "Domicilio", value: ADDRESS },
                 { label: "Correo electrónico", value: EMAIL },
                 { label: "Sitio web", value: `https://${DOMAIN}` },
