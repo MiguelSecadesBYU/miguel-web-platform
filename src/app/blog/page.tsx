@@ -7,7 +7,7 @@ const posts = [
     title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
     excerpt:
       "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo. Y sigue sin aparecer.",
-    date: "Junio 2025",
+    date: "Junio 2026",
     ready: true,
   },
   {
