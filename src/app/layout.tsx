@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Miguel Secades · Autor",
     description:
       "Autor de El Anillo de Salomón. Thriller arqueológico desde Madrid hasta Jerusalén, Babilonia y Axum.",
-    url: "https://miguelseacades.com",
+    url: "https://miguelsecades.com",
     siteName: "Miguel Secades",
     locale: "es_ES",
     type: "website",
