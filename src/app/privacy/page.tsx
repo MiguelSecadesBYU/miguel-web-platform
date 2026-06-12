@@ -8,9 +8,7 @@ export const metadata: Metadata = {
 
 const LAST_UPDATE = "Junio 2026";
 const RESPONSIBLE_NAME = "Miguel Secades García";
-const NIF = "53539017P";
 const EMAIL = "miguel.secades.garcia@gmail.com";
-const ADDRESS = "[DIRECCIÓN POSTAL]"; // Reemplazar con dirección real antes de publicar
 
 export default function PrivacyPage() {
   return (
@@ -36,8 +34,6 @@ export default function PrivacyPage() {
               <p>En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa que el Responsable del tratamiento de los datos personales recabados a través de este sitio web es:</p>
               <DataBox items={[
                 { label: "Nombre", value: RESPONSIBLE_NAME },
-                { label: "NIF", value: NIF },
-                { label: "Domicilio", value: ADDRESS },
                 { label: "Correo electrónico", value: EMAIL },
                 { label: "Sitio web", value: "https://miguel-web-platform.vercel.app" },
               ]} />
