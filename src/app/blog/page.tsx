@@ -11,20 +11,20 @@ const posts = [
     ready: true,
   },
   {
+    slug: "arca-de-la-alianza-misterio-historia",
+    category: "Investigación",
+    title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
+    excerpt:
+      "Desapareció hace más de 2.600 años. Nadie sabe dónde está. Y sin embargo, hay quien afirma que la tiene. Que la ha visto. Que la custodia con su vida.",
+    date: "Junio 2026",
+    ready: true,
+  },
+  {
     slug: null,
     category: "Proceso creativo",
     title: "Cómo nació El Anillo de Salomón",
     excerpt:
       "Notas sobre el origen de la novela, las primeras ideas y el camino que llevó a convertir un misterio antiguo en thriller contemporáneo.",
-    date: "Próximamente",
-    ready: false,
-  },
-  {
-    slug: null,
-    category: "Escenarios",
-    title: "Jerusalén, Babilonia y Axum",
-    excerpt:
-      "Tres lugares reales que forman parte del viaje narrativo y simbólico de la novela.",
     date: "Próximamente",
     ready: false,
   },
