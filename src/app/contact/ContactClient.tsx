@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const CONTACT_SUBJECTS = [
   "Prensa y medios",
@@ -10,14 +11,16 @@ const CONTACT_SUBJECTS = [
   "Consulta general",
 ];
 
-export default function ContactPage() {
+export default function ContactClient() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [subject, setSubject] = useState("");
+  const [accepted, setAccepted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
+    if (!accepted) return;
     setStatus("loading");
 
     const form = e.currentTarget;
@@ -51,11 +54,8 @@ export default function ContactPage() {
     <main className="min-h-screen bg-[#070707] px-6 py-16 text-white sm:py-24 lg:px-12">
       <section className="mx-auto max-w-6xl">
 
-        {/* Cabecera */}
         <div className="mb-14 max-w-2xl">
-          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-amber-500">
-            Contacto
-          </p>
+          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-amber-500">Contacto</p>
           <h1 className="mb-6 font-serif text-4xl font-light leading-tight sm:text-5xl md:text-6xl">
             Hablemos.
           </h1>
@@ -114,11 +114,13 @@ export default function ContactPage() {
             <div className="flex min-h-[400px] items-center justify-center border border-amber-500/20 bg-amber-500/5 p-10 text-center">
               <div>
                 <p className="mb-3 font-serif text-3xl font-light text-stone-100">Mensaje recibido.</p>
-                <p className="text-base text-stone-400">Gracias por escribirme. Te responderé lo antes posible.</p>
+                <p className="text-base text-stone-400">
+                  Gracias por escribirme. Te responderé lo antes posible.
+                </p>
               </div>
             </div>
           ) : (
-              <form onSubmit={handleSubmit} noValidate className="space-y-5">
+            <form onSubmit={handleSubmit} noValidate className="space-y-5">
 
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
@@ -141,13 +143,8 @@ export default function ContactPage() {
                 <label htmlFor="subject" className="mb-2 block text-xs uppercase tracking-[0.18em] text-stone-500">
                   Motivo *
                 </label>
-                <select
-                  id="subject"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                  required
-                  className="w-full border border-stone-800 bg-[#111] px-4 py-3.5 text-sm text-white outline-none transition focus:border-amber-500/60"
-                >
+                <select id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required
+                  className="w-full border border-stone-800 bg-[#111] px-4 py-3.5 text-sm text-white outline-none transition focus:border-amber-500/60">
                   <option value="" disabled>Selecciona un motivo</option>
                   {CONTACT_SUBJECTS.map((s) => (
                     <option key={s} value={s}>{s}</option>
@@ -164,13 +161,45 @@ export default function ContactPage() {
                   className="w-full resize-none border border-stone-800 bg-[#111] px-4 py-3.5 text-sm text-white placeholder-stone-700 outline-none transition focus:border-amber-500/60" />
               </div>
 
+              {/* Checkbox RGPD */}
+              <div className="flex items-start gap-3 pt-1">
+                <input
+                  type="checkbox"
+                  id="privacy-accept"
+                  checked={accepted}
+                  onChange={(e) => setAccepted(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer accent-amber-500"
+                />
+                <label
+                  htmlFor="privacy-accept"
+                  className="cursor-pointer text-xs leading-relaxed text-stone-500"
+                >
+                  He leído y acepto la{" "}
+                  <Link
+                    href="/privacy"
+                    target="_blank"
+                    className="text-amber-500/80 underline underline-offset-2 transition hover:text-amber-400"
+                  >
+                    Política de Privacidad
+                  </Link>
+                  . Consiento el tratamiento de mis datos personales para
+                  gestionar mi consulta.
+                </label>
+              </div>
+
               {status === "error" && (
                 <p className="text-sm text-red-400">{errorMsg}</p>
               )}
 
+              {!accepted && (
+                <p className="text-xs text-stone-600">
+                  Debes aceptar la política de privacidad para enviar el mensaje.
+                </p>
+              )}
+
               <div className="flex flex-col gap-4 pt-1 sm:flex-row sm:items-center">
-                <button type="submit" disabled={status === "loading"}
-                  className="border border-amber-500/80 px-8 py-4 text-sm uppercase tracking-[0.18em] text-amber-400 transition hover:bg-amber-500 hover:text-black disabled:opacity-50">
+                <button type="submit" disabled={status === "loading" || !accepted}
+                  className="border border-amber-500/80 px-8 py-4 text-sm uppercase tracking-[0.18em] text-amber-400 transition hover:bg-amber-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-40">
                   {status === "loading" ? "Enviando..." : "Enviar mensaje"}
                 </button>
                 <p className="text-xs text-stone-700">* Campos obligatorios</p>
