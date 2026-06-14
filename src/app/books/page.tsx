@@ -57,7 +57,7 @@ export default function BooksPage() {
             </p>
             <p>
               El arqueólogo Álvaro Ballester y Daniela Gil se lanzan a una
-              carrera contrarreloj desde Madrid hasta los archivos del Vaticano,
+              carrera contrarreloj desde Madrid hasta Suiza,
               las ruinas de Babilonia y la mítica Axum. Cada descubrimiento los
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
