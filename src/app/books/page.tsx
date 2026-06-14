@@ -38,7 +38,7 @@ export default function BooksPage() {
 
           {/* Frase de comparación — clave para conversión */}
           <p className="mb-6 text-sm uppercase tracking-[0.2em] text-stone-600">
-            Para lectores de Dan Brown, Javier Sierra y Steve Berry
+            Para lectores de Dan Brown, Javier Sierra y Matilde Asensi
           </p>
 
           {/* Hook emocional — nueva frase más impactante */}
