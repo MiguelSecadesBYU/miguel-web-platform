@@ -62,7 +62,7 @@ export default function BooksPage() {
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
             <p className="font-medium text-stone-300">
-              Pero no son los únicos tras el anillo.
+              Pero no son los únicos tras el anillo. <br />
               Y quienes lo desean no están dispuestos a compartirlo.
             </p>
           </div>
@@ -121,33 +121,28 @@ export default function BooksPage() {
             </p>
             <div className="space-y-3 font-serif text-base italic leading-relaxed text-stone-400">
               <p>
-                A medianoche, un leve clic rompió el silencio.
+                «Un hombre de mediana estatura, muy delgado, ataviado con una
+                larga gabardina y la capucha puesta —a quien apenas se le podía
+                distinguir el rostro entre las sombras— se sentó a su derecha.
               </p>
               <p>
-                La tapa del reloj se entreabrió sola, y bajo el cristal
-                apareció un resplandor apenas visible: una línea de caracteres
-                diminutos, grabados en la superficie interior.
+                —Se nos está terminando el tiempo —dijo el hombre en un perfecto
+                francés—. Has de encontrarlo rápido, porque de lo contrario las
+                consecuencias pueden ser fatales.
               </p>
               <p>
-                Daniela se incorporó, perpleja. Se inclinó, intentando enfocar
-                el texto, pero las letras eran extrañas, antiguas, imposibles
-                de leer.
+                —Por supuesto, serenissimo imperator. Ya estoy trabajando en ello.
               </p>
               <p>
-                —Álvaro… —susurró—. Mira esto.
+                —¡No me falles! —sentenció el hombre con voz firme y grave—.{" "}
+                <span className="text-stone-200 not-italic font-medium">
+                  El Supremo Consejo exige resultados ya. Haz todo lo que sea
+                  necesario. Sea lo que sea.
+                </span>
               </p>
               <p>
-                Él abrió los ojos, adormecido, y se inclinó sobre el reloj.
-                Su expresión cambió lentamente, de la curiosidad al asombro.
-              </p>
-              <p>
-                —¿Qué pone? —preguntó ella.
-              </p>
-              <p>
-                Álvaro tragó saliva.
-              </p>
-              <p>
-                —Una sola palabra —respondió—. <span className="text-stone-200 not-italic font-medium">"Despierta."</span>
+                Sin mediar más palabras, el hombre se levantó del banco y se
+                alejó tan sigilosamente como había llegado.»
               </p>
             </div>
           </div>
