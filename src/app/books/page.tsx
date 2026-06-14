@@ -121,7 +121,7 @@ export default function BooksPage() {
             </p>
             <div className="space-y-3 font-serif text-base italic leading-relaxed text-stone-400">
               <p>
-                "A medianoche, un leve clic rompió el silencio.
+                A medianoche, un leve clic rompió el silencio.
               </p>
               <p>
                 La tapa del reloj se entreabrió sola, y bajo el cristal
@@ -147,7 +147,7 @@ export default function BooksPage() {
                 Álvaro tragó saliva.
               </p>
               <p>
-                —Una sola palabra —respondió—. <span className="text-stone-200 not-italic font-medium">"Despierta."</span>"
+                —Una sola palabra —respondió—. <span className="text-stone-200 not-italic font-medium">"Despierta."</span>
               </p>
             </div>
           </div>
