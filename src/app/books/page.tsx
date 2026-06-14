@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Libros",
   description:
-    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda.",
+    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Steve Berry.",
 };
 
 export default function BooksPage() {
@@ -26,24 +26,45 @@ export default function BooksPage() {
 
         {/* CONTENIDO */}
         <div className="w-full">
+
+          {/* Etiqueta de género con comparación */}
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-amber-500">
-            Novela
+            Thriller arqueológico
           </p>
 
-          <h1 className="mb-6 font-serif text-4xl font-light leading-tight sm:mb-8 sm:text-5xl md:text-6xl">
+          <h1 className="mb-4 font-serif text-4xl font-light leading-tight sm:text-5xl md:text-6xl">
             El Anillo de Salomón
           </h1>
 
-          <p className="mb-6 text-lg leading-relaxed text-stone-300 sm:mb-8 sm:text-xl">
-            Un thriller arqueológico donde historia, símbolos antiguos y
-            sociedades secretas se entrelazan en una búsqueda que podría cambiar
-            para siempre la comprensión del pasado.
+          {/* Frase de comparación — clave para conversión */}
+          <p className="mb-6 text-sm uppercase tracking-[0.2em] text-stone-600">
+            Para lectores de Dan Brown, Javier Sierra y Steve Berry
           </p>
 
+          {/* Hook emocional — nueva frase más impactante */}
+          <p className="mb-6 text-lg leading-relaxed text-stone-300 sm:mb-8 sm:text-xl">
+            Un thriller arqueológico trepidante donde la historia más antigua
+            del mundo se convierte en la amenaza más peligrosa del presente.
+          </p>
+
+          {/* Sinopsis con tensión narrativa mejorada */}
           <div className="mb-8 space-y-4 border-l border-amber-500/40 pl-5 text-stone-400 sm:mb-10 sm:pl-6">
-            <p>Un antiguo papiro hallado en Oriente Próximo lleva al arqueólogo Álvaro Ballester hasta la pista de un objeto legendario: el Anillo de Salomón.</p>
-            <p>Desde Madrid hasta Jerusalén, Babilonia y Axum, cada descubrimiento acerca a Ballester y Daniela Gil a una verdad que tal vez nunca debió salir a la luz.</p>
-            <p>Pero no son los únicos que buscan el anillo.</p>
+            <p>
+              Un antiguo papiro hallado en Oriente Próximo revela la pista de
+              un objeto que no debería existir: el Anillo de Salomón, capaz
+              —según los textos— de doblegar la voluntad de los espíritus y
+              revelar los secretos del universo.
+            </p>
+            <p>
+              El arqueólogo Álvaro Ballester y Daniela Gil se lanzan a una
+              carrera contrarreloj desde Madrid hasta los archivos del Vaticano,
+              las ruinas de Babilonia y la mítica Axum. Cada descubrimiento los
+              acerca a una verdad que alguien lleva siglos ocultando.
+            </p>
+            <p className="font-medium text-stone-300">
+              Pero no son los únicos que buscan el anillo. Y los que también lo
+              buscan no están dispuestos a compartirlo.
+            </p>
           </div>
 
           {/* FICHA TÉCNICA */}
@@ -66,34 +87,87 @@ export default function BooksPage() {
             </div>
           </div>
 
-          {/* BOTONES DE COMPRA */}
+          {/* BOTONES DE COMPRA — con más urgencia */}
           <div className="mb-5">
-            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">Disponible en Amazon</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">
+              Disponible ahora en Amazon
+            </p>
             <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
-              <a href="https://www.amazon.es/dp/B0H14NRP92" target="_blank" rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center border border-amber-500/80 px-4 py-4 text-center text-amber-400 transition hover:bg-amber-500 hover:text-black sm:px-7">
+              <a
+                href="https://www.amazon.es/dp/B0H14NRP92"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center border border-amber-500/80 px-4 py-4 text-center text-amber-400 transition hover:bg-amber-500 hover:text-black sm:px-7"
+              >
                 <span className="mb-1 text-xs uppercase tracking-[0.2em] opacity-70">Comprar</span>
                 <span className="text-xs uppercase tracking-[0.15em] sm:text-sm">Tapa blanda</span>
               </a>
-              <a href="https://www.amazon.es/dp/B0GZVQL88V" target="_blank" rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center border border-amber-500/80 px-4 py-4 text-center text-amber-400 transition hover:bg-amber-500 hover:text-black sm:px-7">
+              <a
+                href="https://www.amazon.es/dp/B0GZVQL88V"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center border border-amber-500/80 px-4 py-4 text-center text-amber-400 transition hover:bg-amber-500 hover:text-black sm:px-7"
+              >
                 <span className="mb-1 text-xs uppercase tracking-[0.2em] opacity-70">Comprar</span>
                 <span className="text-xs uppercase tracking-[0.15em] sm:text-sm">Ebook Kindle</span>
               </a>
             </div>
           </div>
 
+          {/* Extracto real de la novela */}
+          <div className="mb-6 border border-stone-800 bg-black/30 p-5">
+            <p className="mb-4 text-xs uppercase tracking-[0.2em] text-amber-500">
+              Del interior de la novela
+            </p>
+            <div className="space-y-3 font-serif text-base italic leading-relaxed text-stone-400">
+              <p>
+                "A medianoche, un leve clic rompió el silencio.
+              </p>
+              <p>
+                La tapa del reloj se entreabrió sola, y bajo el cristal
+                apareció un resplandor apenas visible: una línea de caracteres
+                diminutos, grabados en la superficie interior.
+              </p>
+              <p>
+                Daniela se incorporó, perpleja. Se inclinó, intentando enfocar
+                el texto, pero las letras eran extrañas, antiguas, imposibles
+                de leer.
+              </p>
+              <p>
+                —Álvaro… —susurró—. Mira esto.
+              </p>
+              <p>
+                Él abrió los ojos, adormecido, y se inclinó sobre el reloj.
+                Su expresión cambió lentamente, de la curiosidad al asombro.
+              </p>
+              <p>
+                —¿Qué pone? —preguntó ella.
+              </p>
+              <p>
+                Álvaro tragó saliva.
+              </p>
+              <p>
+                —Una sola palabra —respondió—. <span className="text-stone-200 not-italic font-medium">"Despierta."</span>"
+              </p>
+            </div>
+          </div>
+
           {/* BOTONES SECUNDARIOS */}
           <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
-            <Link href="/contact"
-              className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7">
-              Prensa
-            </Link>
-            <Link href="/blog"
-              className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7">
+            <Link
+              href="/blog"
+              className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7"
+            >
               Tras las páginas
             </Link>
+            <Link
+              href="/contact"
+              className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7"
+            >
+              Prensa
+            </Link>
           </div>
+
         </div>
       </section>
     </main>
