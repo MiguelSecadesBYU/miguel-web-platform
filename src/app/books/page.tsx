@@ -62,8 +62,8 @@ export default function BooksPage() {
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
             <p className="font-medium text-stone-300">
-              Pero no son los únicos que buscan el anillo. Y los que también lo
-              buscan no están dispuestos a compartirlo.
+              Pero no son los únicos tras el anillo.
+              Y quienes lo desean no están dispuestos a compartirlo.
             </p>
           </div>
 
@@ -164,7 +164,7 @@ export default function BooksPage() {
               href="/contact"
               className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7"
             >
-              Prensa
+              Contacto
             </Link>
           </div>
 
