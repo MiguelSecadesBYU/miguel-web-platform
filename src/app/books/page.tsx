@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Libros",
+  title: "El Anillo de Salomón | Thriller arqueológico de Miguel Secades",
   description:
     "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Steve Berry.",
 };
