@@ -229,7 +229,7 @@ export default function PostComoNacio() {
           <Section>
             <H2>El regreso — y el final</H2>
             <p>
-              En 2024 lo retomé. No sé exactamente qué cambió. Quizás la
+              En 2025 lo retomé. No sé exactamente qué cambió. Quizás la
               perspectiva que da el tiempo. Quizás el cansancio de dejar algo
               a medias. Quizás simplemente la certeza de que si no lo terminaba
               entonces, no lo iba a terminar nunca.
