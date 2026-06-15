@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const posts = [
   {
-    slug: "anillo-de-salomon-historia-poderes-leyenda",
-    category: "Investigación",
-    title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
+    slug: "como-nacio-el-anillo-de-salomon",
+    category: "Proceso creativo",
+    title: "Cómo nació El Anillo de Salomón",
     excerpt:
-      "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo. Y sigue sin aparecer.",
+      "Tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos. Esta es la historia detrás de la novela.",
     date: "Junio 2026",
     ready: true,
   },
@@ -20,13 +20,13 @@ const posts = [
     ready: true,
   },
   {
-    slug: null,
-    category: "Proceso creativo",
-    title: "Cómo nació El Anillo de Salomón",
+    slug: "anillo-de-salomon-historia-poderes-leyenda",
+    category: "Investigación",
+    title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
     excerpt:
-      "Notas sobre el origen de la novela, las primeras ideas y el camino que llevó a convertir un misterio antiguo en thriller contemporáneo.",
-    date: "Próximamente",
-    ready: false,
+      "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo. Y sigue sin aparecer.",
+    date: "Junio 2026",
+    ready: true,
   },
 ];
 
@@ -49,24 +49,13 @@ export default function BlogPage() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {posts.map((post) => {
-            const card = (
-              <article
-                key={post.title}
-                className={`group border border-stone-800 bg-black/40 p-7 transition ${
-                  post.ready
-                    ? "cursor-pointer hover:border-amber-500/60"
-                    : "opacity-60"
-                }`}
-              >
+          {posts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`}>
+              <article className="group h-full border border-stone-800 bg-black/40 p-7 transition hover:border-amber-500/60">
                 <p className="mb-4 text-xs uppercase tracking-[0.25em] text-amber-500">
                   {post.category}
                 </p>
-                <h2
-                  className={`mb-5 font-serif text-2xl font-light leading-snug text-white ${
-                    post.ready ? "group-hover:text-amber-400" : ""
-                  }`}
-                >
+                <h2 className="mb-5 font-serif text-2xl font-light leading-snug text-white group-hover:text-amber-400">
                   {post.title}
                 </h2>
                 <p className="mb-8 text-sm leading-7 text-stone-400">
@@ -74,25 +63,13 @@ export default function BlogPage() {
                 </p>
                 <div className="flex items-center justify-between border-t border-stone-800 pt-5 text-xs uppercase tracking-[0.18em] text-stone-500">
                   <span>{post.date}</span>
-                  {post.ready ? (
-                    <span className="text-amber-500 transition group-hover:translate-x-1">
-                      Leer más →
-                    </span>
-                  ) : (
-                    <span>Próximamente</span>
-                  )}
+                  <span className="text-amber-500 transition group-hover:translate-x-1">
+                    Leer más →
+                  </span>
                 </div>
               </article>
-            );
-
-            return post.ready && post.slug ? (
-              <Link key={post.title} href={`/blog/${post.slug}`}>
-                {card}
-              </Link>
-            ) : (
-              <div key={post.title}>{card}</div>
-            );
-          })}
+            </Link>
+          ))}
         </div>
       </section>
     </main>

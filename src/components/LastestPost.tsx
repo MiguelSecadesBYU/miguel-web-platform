@@ -2,6 +2,15 @@ import Link from "next/link";
 
 const latestPosts = [
   {
+    slug: "como-nacio-el-anillo-de-salomon",
+    category: "Proceso creativo",
+    title: "Cómo nació El Anillo de Salomón",
+    excerpt:
+      "Tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos. Esta es la historia detrás de la novela.",
+    date: "Junio 2026",
+    readTime: "8 min",
+  },
+  {
     slug: "arca-de-la-alianza-misterio-historia",
     category: "Investigación",
     title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
@@ -10,15 +19,6 @@ const latestPosts = [
     date: "Junio 2026",
     readTime: "14 min",
   },
-  {
-    slug: "anillo-de-salomon-historia-poderes-leyenda",
-    category: "Investigación",
-    title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
-    excerpt:
-      "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo. Y sigue sin aparecer.",
-    date: "Junio 2026",
-    readTime: "12 min",
-  },
 ];
 
 export default function LatestPost() {
@@ -26,7 +26,6 @@ export default function LatestPost() {
     <section className="border-t border-stone-800 bg-[#070707] px-6 py-24 lg:px-12">
       <div className="mx-auto max-w-7xl">
 
-        {/* Cabecera */}
         <div className="mb-12 flex items-end justify-between">
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.35em] text-amber-500">
@@ -44,15 +43,12 @@ export default function LatestPost() {
           </Link>
         </div>
 
-        {/* Grid de dos posts */}
         <div className="grid gap-6 md:grid-cols-2">
           {latestPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <article className="group relative h-full border border-stone-800 bg-black/40 p-8 transition duration-300 hover:border-amber-500/40">
-                {/* Línea lateral animada */}
                 <div className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-amber-500/0 via-amber-500/60 to-amber-500/0 opacity-0 transition duration-500 group-hover:opacity-100" />
 
-                {/* Meta */}
                 <div className="mb-5 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.25em] text-stone-600">
                   <span className="text-amber-500/80">{post.category}</span>
                   <span>·</span>
@@ -61,17 +57,14 @@ export default function LatestPost() {
                   <span>{post.readTime} de lectura</span>
                 </div>
 
-                {/* Título */}
                 <h3 className="mb-4 font-serif text-xl font-light leading-snug text-stone-100 transition duration-300 group-hover:text-amber-400 md:text-2xl">
                   {post.title}
                 </h3>
 
-                {/* Extracto */}
                 <p className="mb-8 text-sm leading-relaxed text-stone-400">
                   {post.excerpt}
                 </p>
 
-                {/* CTA */}
                 <div className="flex items-center gap-3">
                   <span className="text-xs uppercase tracking-[0.25em] text-amber-500 transition duration-300 group-hover:text-amber-400">
                     Leer artículo
@@ -83,7 +76,6 @@ export default function LatestPost() {
           ))}
         </div>
 
-        {/* Enlace móvil */}
         <div className="mt-6 md:hidden">
           <Link
             href="/blog"
