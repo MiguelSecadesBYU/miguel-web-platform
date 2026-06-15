@@ -76,6 +76,7 @@ export default function Footer() {
               { label: "Tras las páginas", href: "/blog" },
               { label: "Autor", href: "/about" },
               { label: "Contacto", href: "/contact" },
+              { label: "Prensa", href: "/press" },
             ].map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="transition hover:text-amber-400">
@@ -104,22 +105,14 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <a
-                href="https://www.amazon.es/dp/B0H14NRP92"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-stone-400 transition hover:text-amber-400"
-              >
+              <a href="https://www.amazon.es/dp/B0H14NRP92" target="_blank" rel="noopener noreferrer"
+                className="text-stone-400 transition hover:text-amber-400">
                 Comprar tapa blanda →
               </a>
             </li>
             <li>
-              <a
-                href="https://www.amazon.es/dp/B0GZVQL88V"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-stone-400 transition hover:text-amber-400"
-              >
+              <a href="https://www.amazon.es/dp/B0GZVQL88V" target="_blank" rel="noopener noreferrer"
+                className="text-stone-400 transition hover:text-amber-400">
                 Comprar ebook Kindle →
               </a>
             </li>
@@ -154,7 +147,7 @@ export default function Footer() {
               Política de privacidad
             </Link>
             <Link href="/terms" className="transition hover:text-amber-400">
-              Aviso legal y términos de uso
+              Aviso legal
             </Link>
           </div>
         </div>

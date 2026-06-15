@@ -99,12 +99,13 @@ export default function ContactClient() {
             <div className="border border-stone-800 bg-black/30 p-6">
               <p className="mb-2 text-xs uppercase tracking-[0.2em] text-amber-500">Prensa y medios</p>
               <p className="text-sm leading-relaxed text-stone-400">
-                Si eres periodista, blogger o trabajas en medios, en la página
-                del autor encontrarás nota biográfica y bio corta listos para usar.
+                Si eres periodista, blogger o trabajas en medios, en la sala
+                de prensa encontrarás portada, foto del autor, biografías y
+                ficha completa del libro listos para descargar.
               </p>
-              <a href="/about"
+              <a href="/press"
                 className="mt-4 inline-block text-xs uppercase tracking-[0.2em] text-stone-500 transition hover:text-amber-400">
-                Ver página del autor →
+                Ir a la sala de prensa →
               </a>
             </div>
           </div>
