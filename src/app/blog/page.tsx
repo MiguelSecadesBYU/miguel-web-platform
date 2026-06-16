@@ -30,6 +30,14 @@ const posts = [
   },
 ];
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tras las páginas",
+  description:
+    "Blog de Miguel Secades García. Investigación histórica, proceso creativo y el universo de El Anillo de Salomón.",
+};
+
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-[#070707] px-6 py-28 text-white lg:px-12">
