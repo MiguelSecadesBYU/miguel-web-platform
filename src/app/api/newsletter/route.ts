@@ -31,13 +31,15 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         email,
-        attributes: { FIRSTNAME: name },
+        attributes: {
+          FIRSTNAME: name,
+          NOMBRE: name, // Variable usada en la plantilla de bienvenida de Brevo
+        },
         listIds: [LIST_ID],
-        updateEnabled: true, // Si ya existe, actualiza en vez de dar error
+        updateEnabled: true,
       }),
     });
 
-    // Brevo devuelve 201 al crear y 204 al actualizar
     if (response.status === 201 || response.status === 204) {
       return NextResponse.json({ success: true }, { status: 200 });
     }
@@ -45,7 +47,6 @@ export async function POST(req: NextRequest) {
     const errorData = await response.json();
     console.error("Error de Brevo:", errorData);
 
-    // Mensaje amigable si el email ya está suscrito
     if (errorData.code === "duplicate_parameter") {
       return NextResponse.json(
         { error: "Este email ya está suscrito." },
@@ -64,7 +65,4 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     );
   }
-
-  
-  
 }
