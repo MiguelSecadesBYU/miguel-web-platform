@@ -1,31 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-
-function CopyButton({ text }: { text: string }) {
-  const [copied, setCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
-  };
-  return (
-    <button
-      onClick={handleCopy}
-      className="mt-5 text-xs uppercase tracking-[0.2em] text-amber-500/70 transition hover:text-amber-400"
-    >
-      {copied ? "¡Copiado! ✓" : "Copiar →"}
-    </button>
-  );
-}
-
-const BIO_CORTA =
-  "Miguel Secades García (Cornellana, Asturias, 1980) es autor de El Anillo de Salomón, su primera novela. Trabajó durante años en el sector informático antes de jubilarse anticipadamente. Es su debut en la ficción. Reside en Asturias.";
-
-const BIO_MEDIA =
-  "Miguel Secades García nació en Cornellana, Asturias, en 1980. Llegó al mundo con una cardiopatía congénita que le llevó al quirófano en tres ocasiones — a los dos años, a los trece y a los treinta y cuatro — y que marcó de forma decisiva su manera de entender el tiempo y el propósito. Tras una larga trayectoria profesional en el sector informático, se jubiló anticipadamente a los treinta y seis años. Fue entonces cuando empezó a escribir. El Anillo de Salomón, su primera novela, es un thriller arqueológico que mezcla historia antigua, símbolos y sociedades secretas en una carrera a través de Madrid, Jerusalén, Babilonia y Axum. Publicada en 2026 en Amazon KDP, está disponible en formato ebook y tapa blanda. Secades vive en Asturias y trabaja en su siguiente proyecto.";
 
 const timeline = [
   {
@@ -210,55 +185,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── BIO PARA PRENSA ── */}
+      {/* ── PRENSA ── */}
       <section className="px-6 py-16 lg:px-12">
         <div className="mx-auto max-w-3xl">
-          <p className="mb-2 text-sm uppercase tracking-[0.35em] text-amber-500">
-            Notas biográficas · Para prensa y medios
-          </p>
-          <p className="mb-10 text-sm text-stone-600">
-            Dos versiones disponibles según el espacio y el formato.
-          </p>
-
-          <div className="space-y-6">
-            {/* Bio corta */}
-            <div className="border border-stone-800 bg-[#0d0d0d] p-8">
-              <p className="mb-3 text-xs uppercase tracking-[0.25em] text-stone-500">
-                Versión corta
-              </p>
-              <p className="text-sm leading-relaxed text-stone-400">
-                Miguel Secades García (Cornellana, Asturias, 1980) es autor de{" "}
-                <em>El Anillo de Salomón</em>, su primera novela. Trabajó durante
-                años en el sector informático antes de jubilarse anticipadamente.
-                Es su debut en la ficción. Reside en Asturias.
-              </p>
-              <CopyButton text={BIO_CORTA} />
-            </div>
-
-            {/* Bio media */}
-            <div className="border border-stone-800 bg-[#0d0d0d] p-8">
-              <p className="mb-3 text-xs uppercase tracking-[0.25em] text-stone-500">
-                Versión extendida
-              </p>
-              <p className="text-sm leading-relaxed text-stone-400">
-                Miguel Secades García nació en Cornellana, Asturias, en 1980.
-                Llegó al mundo con una cardiopatía congénita que le llevó al
-                quirófano en tres ocasiones — a los dos años, a los trece y a
-                los treinta y cuatro — y que marcó de forma decisiva su manera
-                de entender el tiempo y el propósito. Tras una larga trayectoria
-                profesional en el sector informático, se jubiló anticipadamente
-                a los treinta y seis años. Fue entonces cuando empezó a escribir.
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-stone-400">
-                <em>El Anillo de Salomón</em>, su primera novela, es un thriller
-                arqueológico que mezcla historia antigua, símbolos y sociedades
-                secretas en una carrera a través de Madrid, Jerusalén, Babilonia
-                y Axum. Publicada en 2026 en Amazon KDP, está disponible en
-                formato ebook y tapa blanda. Secades vive en Asturias y trabaja
-                en su siguiente proyecto.
-              </p>
-              <CopyButton text={BIO_MEDIA} />
-            </div>
+          <div className="border border-stone-800 bg-[#0d0d0d] p-8">
+            <p className="mb-3 text-xs uppercase tracking-[0.25em] text-amber-500">
+              Prensa y medios
+            </p>
+            <p className="mb-5 text-sm leading-relaxed text-stone-400">
+              ¿Eres periodista, blogger o trabajas en medios? En la sala de
+              prensa encontrarás biografías en dos versiones, portada en alta
+              resolución, foto del autor y ficha completa del libro, todo listo
+              para descargar y usar sin necesidad de solicitarlo.
+            </p>
+            <a
+              href="/press"
+              className="inline-block text-xs uppercase tracking-[0.2em] text-amber-500 transition hover:text-amber-400"
+            >
+              Ir a la sala de prensa →
+            </a>
           </div>
         </div>
       </section>
