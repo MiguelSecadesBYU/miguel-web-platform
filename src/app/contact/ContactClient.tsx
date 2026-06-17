@@ -73,9 +73,9 @@ export default function ContactClient() {
           <div className="space-y-10">
             <div>
               <p className="mb-3 text-xs uppercase tracking-[0.25em] text-amber-500">Email</p>
-              <a href="mailto:miguel.secades.garcia@gmail.com"
+              <a href="mailto:contacto.miguelsecades@gmail.com"
                 className="break-all text-sm text-stone-300 transition hover:text-amber-400">
-                miguel.secades.garcia@gmail.com
+                contacto.miguelsecades@gmail.com
               </a>
             </div>
 

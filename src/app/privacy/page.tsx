@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const LAST_UPDATE = "Junio 2026";
 const RESPONSIBLE_NAME = "Miguel Secades García";
-const EMAIL = "miguel.secades.garcia@gmail.com";
+const EMAIL = "contacto.miguelsecades@gmail.com";
 
 export default function PrivacyPage() {
   return (

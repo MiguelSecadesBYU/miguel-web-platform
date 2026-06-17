@@ -56,10 +56,10 @@ export default function PressClient() {
           </p>
           <div className="mt-8">
             <a
-              href="mailto:miguel.secades.garcia@gmail.com"
+              href="mailto:contacto.miguelsecades@gmail.com"
               className="text-sm uppercase tracking-[0.2em] text-amber-500 transition hover:text-amber-400"
             >
-              Contacto de prensa: miguel.secades.garcia@gmail.com →
+              Contacto de prensa: contacto.miguelsecades@gmail.com →
             </a>
           </div>
         </div>
@@ -211,9 +211,9 @@ export default function PressClient() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <p className="mb-2 text-xs uppercase tracking-[0.2em] text-amber-500">Email</p>
-                  <a href="mailto:miguel.secades.garcia@gmail.com"
+                  <a href="mailto:contacto.miguelsecades@gmail.com"
                     className="text-sm text-stone-300 transition hover:text-amber-400">
-                    miguel.secades.garcia@gmail.com
+                    contacto.miguelsecades@gmail.com
                   </a>
                 </div>
                 <div>
