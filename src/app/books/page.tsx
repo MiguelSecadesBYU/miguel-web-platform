@@ -195,7 +195,7 @@ export default function BooksPage() {
               Tras las páginas
             </Link>
             <Link
-              href="/contact"
+              href="/press"
               className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7"
             >
               Prensa
