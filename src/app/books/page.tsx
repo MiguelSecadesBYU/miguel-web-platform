@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Miguel Secades-Libros",
+  title: "El Anillo de Salomón | Thriller arqueológico de Miguel Secades",
   description:
     "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Matilde Asensi.",
 };
@@ -57,7 +57,7 @@ export default function BooksPage() {
             </p>
             <p>
               El arqueólogo Álvaro Ballester y Daniela Gil se lanzan a una
-              carrera contrarreloj desde Madrid hasta los archivos del Vaticano,
+              carrera contrarreloj desde Madrid hasta Jerusalén,
               las ruinas de Babilonia y la mítica Axum. Cada descubrimiento los
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
