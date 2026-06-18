@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "El Anillo de Salomón | Thriller arqueológico de Miguel Secades",
+  title: "Libros",
   description:
-    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Matilde Asensi.",
+    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Steve Berry.",
 };
 
 export default function BooksPage() {
@@ -38,7 +38,7 @@ export default function BooksPage() {
 
           {/* Frase de comparación — clave para conversión */}
           <p className="mb-6 text-sm uppercase tracking-[0.2em] text-stone-600">
-            Para lectores de Dan Brown, Javier Sierra y Matilde Asensi
+            Para lectores de Dan Brown, Javier Sierra y Steve Berry
           </p>
 
           {/* Hook emocional — nueva frase más impactante */}
@@ -57,13 +57,13 @@ export default function BooksPage() {
             </p>
             <p>
               El arqueólogo Álvaro Ballester y Daniela Gil se lanzan a una
-              carrera contrarreloj desde Madrid hasta Jerusalén,
+              carrera contrarreloj desde Madrid hasta los archivos del Vaticano,
               las ruinas de Babilonia y la mítica Axum. Cada descubrimiento los
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
             <p className="font-medium text-stone-300">
-              Pero no son los únicos tras el anillo. <br />
-              Y quienes lo desean no están dispuestos a compartirlo.
+              Pero no son los únicos que buscan el anillo. Y los que también lo
+              buscan no están dispuestos a compartirlo.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function BooksPage() {
             </p>
             <div className="space-y-3 font-serif text-base italic leading-relaxed text-stone-400">
               <p>
-                «Un hombre de mediana estatura, muy delgado, ataviado con una
+                "Un hombre de mediana estatura, muy delgado, ataviado con una
                 larga gabardina y la capucha puesta —a quien apenas se le podía
                 distinguir el rostro entre las sombras— se sentó a su derecha.
               </p>
@@ -142,12 +142,51 @@ export default function BooksPage() {
               </p>
               <p>
                 Sin mediar más palabras, el hombre se levantó del banco y se
-                alejó tan sigilosamente como había llegado.»
+                alejó tan sigilosamente como había llegado."
               </p>
             </div>
           </div>
 
-          {/* BOTONES SECUNDARIOS */}
+          {/* RESEÑAS */}
+          <div className="mb-6">
+            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">
+              Lo que dicen los lectores
+            </p>
+            <a
+              href="https://vm.tiktok.com/ZNR3DokgU/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
+            >
+              {/* Estrellas */}
+              <div className="mb-4 flex gap-1">
+                {[...Array(4)].map((_, i) => (
+                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-500">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                ))}
+              </div>
+
+              {/* Cita */}
+              <p className="mb-4 font-serif text-base italic leading-relaxed text-stone-300">
+                "Un excelente comienzo para una saga que demuestra que, incluso
+                tras los misterios más antiguos, siempre puede haber una puerta
+                esperando a ser abierta."
+              </p>
+
+              {/* Atribución */}
+              <div className="flex items-center justify-between">
+                <p className="text-xs uppercase tracking-[0.2em] text-stone-600">
+                  Los susurros del papel · TikTok
+                </p>
+                <span className="text-xs uppercase tracking-[0.2em] text-stone-700 transition group-hover:text-amber-500">
+                  Ver reseña →
+                </span>
+              </div>
+            </a>
+          </div>
+
+          
           <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
             <Link
               href="/blog"
@@ -159,7 +198,7 @@ export default function BooksPage() {
               href="/contact"
               className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7"
             >
-              Contacto
+              Prensa
             </Link>
           </div>
 
