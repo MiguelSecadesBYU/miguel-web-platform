@@ -148,7 +148,7 @@ export default function PressClient() {
                   { label: "ISBN", value: "979-8195869403" },
                   { label: "Idioma", value: "Español" },
                   { label: "Formatos", value: "Tapa blanda · Ebook Kindle" },
-                  { label: "Precio tapa blanda", value: "19,99 €" },
+                  { label: "Precio tapa blanda", value: "16,99 €" },
                   { label: "Precio ebook", value: "2,99 € · Gratis con Kindle Unlimited" },
                   { label: "Escenarios", value: "Madrid · Jerusalén · Babilonia · Axum" },
                 ].map((item) => (
