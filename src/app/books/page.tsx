@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "El Anillo de Salomón | Thriller arqueológico de Miguel Secades",
+  title: "Libros",
   description:
-    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Matilde Asensi.",
+    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Steve Berry.",
 };
 
 export default function BooksPage() {
@@ -38,7 +38,7 @@ export default function BooksPage() {
 
           {/* Frase de comparación — clave para conversión */}
           <p className="mb-6 text-sm uppercase tracking-[0.2em] text-stone-600">
-            Para lectores de Dan Brown, Javier Sierra y Matilde Asensi
+            Para lectores de Dan Brown, Javier Sierra y Steve Berry
           </p>
 
           {/* Hook emocional — nueva frase más impactante */}
@@ -57,7 +57,7 @@ export default function BooksPage() {
             </p>
             <p>
               El arqueólogo Álvaro Ballester y Daniela Gil se lanzan a una
-              carrera contrarreloj desde Madrid hasta Jerusalén,
+              carrera contrarreloj desde Madrid hasta los archivos del Vaticano,
               las ruinas de Babilonia y la mítica Axum. Cada descubrimiento los
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
@@ -186,7 +186,22 @@ export default function BooksPage() {
             </a>
           </div>
 
-          
+          {/* LEER FRAGMENTO */}
+          <div className="mb-5">
+            <a
+              href="https://read.amazon.com/sample/B0GZVQL88V"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center gap-2 border border-stone-700 px-7 py-4 text-sm uppercase tracking-[0.15em] text-stone-300 transition hover:border-amber-500/60 hover:text-amber-400 sm:w-auto"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 shrink-0">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+              Leer las primeras páginas gratis
+            </a>
+          </div>
+
           <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
             <Link
               href="/blog"
@@ -195,7 +210,7 @@ export default function BooksPage() {
               Tras las páginas
             </Link>
             <Link
-              href="/press"
+              href="/contact"
               className="border border-stone-700 px-4 py-3 text-center text-xs uppercase tracking-[0.12em] text-stone-400 transition hover:border-stone-500 hover:text-stone-300 sm:px-7"
             >
               Prensa
