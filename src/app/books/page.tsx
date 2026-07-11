@@ -41,13 +41,13 @@ export default function BooksPage() {
             Para lectores de Dan Brown, Javier Sierra y Steve Berry
           </p>
 
-          {/* Hook emocional — nueva frase más impactante */}
+          {/* Hook emocional */}
           <p className="mb-6 text-lg leading-relaxed text-stone-300 sm:mb-8 sm:text-xl">
             Un thriller arqueológico trepidante donde la historia más antigua
             del mundo se convierte en la amenaza más peligrosa del presente.
           </p>
 
-          {/* Sinopsis con tensión narrativa mejorada */}
+          {/* Sinopsis */}
           <div className="mb-8 space-y-4 border-l border-amber-500/40 pl-5 text-stone-400 sm:mb-10 sm:pl-6">
             <p>
               Un antiguo papiro hallado en Oriente Próximo revela la pista de
@@ -87,7 +87,7 @@ export default function BooksPage() {
             </div>
           </div>
 
-          {/* BOTONES DE COMPRA — con más urgencia */}
+          {/* BOTONES DE COMPRA */}
           <div className="mb-5">
             <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">
               Disponible ahora en Amazon
@@ -152,38 +152,67 @@ export default function BooksPage() {
             <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">
               Lo que dicen los lectores
             </p>
-            <a
-              href="https://vm.tiktok.com/ZNR3DokgU/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
-            >
-              {/* Estrellas */}
-              <div className="mb-4 flex gap-1">
-                {[...Array(4)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-500">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
-                ))}
-              </div>
+            <div className="space-y-3">
 
-              {/* Cita */}
-              <p className="mb-4 font-serif text-base italic leading-relaxed text-stone-300">
-                "Un excelente comienzo para una saga que demuestra que, incluso
-                tras los misterios más antiguos, siempre puede haber una puerta
-                esperando a ser abierta."
-              </p>
-
-              {/* Atribución */}
-              <div className="flex items-center justify-between">
-                <p className="text-xs uppercase tracking-[0.2em] text-stone-600">
-                  Los susurros del papel · TikTok
+              {/* Reseña 1 — Los susurros del papel */}
+              <a
+                href="https://vm.tiktok.com/ZNR3DokgU/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
+              >
+                <div className="mb-4 flex gap-1">
+                  {[...Array(4)].map((_, i) => (
+                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-500">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  ))}
+                </div>
+                <p className="mb-4 font-serif text-base italic leading-relaxed text-stone-300">
+                  "Un excelente comienzo para una saga que demuestra que, incluso
+                  tras los misterios más antiguos, siempre puede haber una puerta
+                  esperando a ser abierta."
                 </p>
-                <span className="text-xs uppercase tracking-[0.2em] text-stone-700 transition group-hover:text-amber-500">
-                  Ver reseña →
-                </span>
-              </div>
-            </a>
+                <div className="flex items-center justify-between">
+                  <p className="text-xs uppercase tracking-[0.2em] text-stone-600">
+                    Los susurros del papel · TikTok
+                  </p>
+                  <span className="text-xs uppercase tracking-[0.2em] text-stone-700 transition group-hover:text-amber-500">
+                    Ver reseña →
+                  </span>
+                </div>
+              </a>
+
+              {/* Reseña 2 — Arina entre libros */}
+              <a
+                href="https://vm.tiktok.com/ZGd9gPJxu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
+              >
+                <div className="mb-4 flex gap-1">
+                  {[...Array(4)].map((_, i) => (
+                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-500">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  ))}
+                </div>
+                <p className="mb-4 font-serif text-base italic leading-relaxed text-stone-300">
+                  "Este thriller me ha tenido enganchada desde el inicio hasta el final.
+                  Hace pasar a los distintos personajes por diferentes situaciones que te
+                  hacen estar en tensión. Espero leer más sobre estos personajes."
+                </p>
+                <div className="flex items-center justify-between">
+                  <p className="text-xs uppercase tracking-[0.2em] text-stone-600">
+                    Arina entre libros · TikTok
+                  </p>
+                  <span className="text-xs uppercase tracking-[0.2em] text-stone-700 transition group-hover:text-amber-500">
+                    Ver reseña →
+                  </span>
+                </div>
+              </a>
+
+            </div>
           </div>
 
           {/* LEER FRAGMENTO */}
