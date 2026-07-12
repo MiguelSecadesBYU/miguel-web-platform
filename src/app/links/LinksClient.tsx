@@ -55,7 +55,7 @@ const LINKS: {
   {
     label: "Sobre el libro",
     sub: "Sinopsis, reseñas y ficha completa",
-    href: "/book",
+    href: "/books",
     external: false,
     icon: "info",
   },
