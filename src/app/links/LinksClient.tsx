@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+
+const BOOKTRAILER_YOUTUBE_ID = "IPOaP4PA510";
 
 /**
  * Enlaces destacados del hub.
@@ -32,13 +34,6 @@ const LINKS: {
     icon: "book",
   },
   {
-    label: "Ver el booktrailer",
-    sub: "55 segundos",
-    href: "#", // TODO: sustituir por la URL real del booktrailer
-    external: true,
-    icon: "play",
-  },
-  {
     label: "Seguir en Instagram",
     sub: "Detrás del libro y del proceso",
     href: "https://www.instagram.com/miguelsecades/",
@@ -55,7 +50,7 @@ const LINKS: {
   {
     label: "Sobre el libro",
     sub: "Sinopsis, reseñas y ficha completa",
-    href: "/books",
+    href: "/book",
     external: false,
     icon: "info",
   },
@@ -156,12 +151,86 @@ function LinkRow({ item }: { item: (typeof LINKS)[number] }) {
   );
 }
 
+function TrailerCard({ onOpen }: { onOpen: () => void }) {
+  return (
+    <button
+      onClick={onOpen}
+      className="group relative block w-full overflow-hidden border border-stone-800 bg-black text-left transition hover:border-amber-500/60"
+    >
+      <div className="relative aspect-video w-full">
+        {/* Miniatura tomada directamente de YouTube a partir del mismo ID del vídeo */}
+        <img
+          src={`https://i.ytimg.com/vi/${BOOKTRAILER_YOUTUBE_ID}/hqdefault.jpg`}
+          alt="Miniatura del booktrailer de El Anillo de Salomón"
+          className="h-full w-full object-cover opacity-70 transition group-hover:opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="flex h-14 w-14 items-center justify-center rounded-full border border-amber-500/70 bg-black/50 text-amber-400 backdrop-blur-sm transition group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black">
+            <svg viewBox="0 0 24 24" fill="currentColor" className="ml-0.5 h-5 w-5">
+              <polygon points="9,7 18,12 9,17" />
+            </svg>
+          </span>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <p className="text-sm font-medium text-white">Ver el booktrailer</p>
+          <p className="text-xs text-stone-300">55 segundos</p>
+        </div>
+      </div>
+    </button>
+  );
+}
+
+function VideoModal({ onClose }: { onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm p-4"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-lg border border-amber-500/40 bg-[#0b0b0c] shadow-[0_0_60px_rgba(245,158,11,0.08)]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Cerrar"
+          className="absolute -top-10 right-0 flex h-8 w-8 items-center justify-center rounded-full border border-stone-700 text-stone-300 transition hover:border-amber-500/60 hover:text-amber-400"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-4 w-4">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <div className="aspect-video w-full">
+          <iframe
+            className="h-full w-full"
+            src={`https://www.youtube-nocookie.com/embed/${BOOKTRAILER_YOUTUBE_ID}?autoplay=1&rel=0`}
+            title="Booktrailer — El Anillo de Salomón"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function LinksClient() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [accepted, setAccepted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [trailerOpen, setTrailerOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -284,10 +353,13 @@ export default function LinksClient() {
 
         {/* Enlaces */}
         <div className="mb-12 space-y-2.5">
+          <TrailerCard onOpen={() => setTrailerOpen(true)} />
           {LINKS.map((item) => (
             <LinkRow key={item.label} item={item} />
           ))}
         </div>
+
+        {trailerOpen && <VideoModal onClose={() => setTrailerOpen(false)} />}
 
         {/* Footer */}
         <footer className="mt-auto text-center">
