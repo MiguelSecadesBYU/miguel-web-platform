@@ -29,8 +29,8 @@ const LINKS: {
   {
     label: "Lee el prólogo y los 10 primeros capítulos gratis",
     sub: "Sin email, sin compra — directo a leer",
-    href: "/books", // TODO: si hay un ancla/fragmento más específico dentro de /books, dímelo y lo afino
-    external: false,
+    href: "https://read.amazon.com/kp/embed?asin=B0GZVQL88V&asin=B0GZVQL88V&preview=newtab&linkCode=kpe",
+    external: true,
     icon: "pages",
     highlight: true,
   },
