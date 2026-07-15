@@ -23,9 +23,17 @@ const LINKS: {
   sub: string;
   href: string;
   external: boolean;
-  icon: "book" | "play" | "instagram" | "tiktok" | "info";
+  icon: "book" | "pages" | "play" | "instagram" | "tiktok" | "info";
   highlight?: boolean;
 }[] = [
+  {
+    label: "Lee el prólogo y los 10 primeros capítulos gratis",
+    sub: "Sin email, sin compra — directo a leer",
+    href: "/books", // TODO: si hay un ancla/fragmento más específico dentro de /books, dímelo y lo afino
+    external: false,
+    icon: "pages",
+    highlight: true,
+  },
   {
     label: "Comprar el libro",
     sub: "Amazon · tapa blanda y Kindle Unlimited",
@@ -71,6 +79,13 @@ function Icon({ name, className }: { name: string; className?: string }) {
       return (
         <svg {...common}>
           <path d="M6 3h9a2 2 0 0 1 2 2v16l-6.5-3.5L4 21V5a2 2 0 0 1 2-2Z" />
+        </svg>
+      );
+    case "pages":
+      return (
+        <svg {...common}>
+          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13Z" />
+          <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z" />
         </svg>
       );
     case "play":
@@ -283,22 +298,22 @@ export default function LinksClient() {
           Thriller arqueológico-esotérico
         </p>
 
-        {/* CTA principal: capítulo gratis */}
+        {/* CTA principal: Archivo Ballester */}
         <div className="mb-10 border border-stone-800 bg-black/30 p-6">
           <p className="mb-3 text-center text-[11px] uppercase tracking-[0.25em] text-amber-500">
-            Regalo para lectores
+            Acceso reservado
           </p>
           <h2 className="mb-2 text-center font-serif text-xl font-light text-stone-100">
-            Llévate el primer capítulo gratis
+            Llévate el Archivo Ballester nº1
           </h2>
           <p className="mb-6 text-center text-xs text-stone-500">
-            Directo a tu correo, en menos de un minuto.
+            El expediente con lo real y lo ficticio de El Anillo de Salomón, directo a tu correo.
           </p>
 
           {status === "success" ? (
             <div className="border border-amber-500/30 bg-amber-500/5 p-6 text-center">
               <p className="mb-1 font-serif text-lg font-light text-stone-100">¡Bienvenido a bordo!</p>
-              <p className="text-xs text-stone-400">Revisa tu correo: el capítulo está de camino.</p>
+              <p className="text-xs text-stone-400">Revisa tu correo: el Archivo Ballester está de camino.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate className="space-y-3">
@@ -334,7 +349,7 @@ export default function LinksClient() {
                 type="submit" disabled={status === "loading" || !accepted}
                 className="w-full border border-amber-500/80 px-6 py-3 text-xs uppercase tracking-[0.18em] text-amber-400 transition hover:bg-amber-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-40"
               >
-                {status === "loading" ? "Enviando..." : "Quiero leerlo"}
+                {status === "loading" ? "Enviando..." : "Lo quiero"}
               </button>
 
               <p className="text-center text-[10px] text-stone-700">
