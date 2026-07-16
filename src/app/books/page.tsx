@@ -218,7 +218,7 @@ export default function BooksPage() {
           {/* LEER FRAGMENTO */}
           <div className="mb-5">
             <a
-              href="https://read.amazon.com/kp/embed?asin=B0GZVQL88V&asin=B0GZVQL88V&preview=newtab&linkCode=kpe"
+              href="https://www.amazon.es/dp/B0GZVQL88V"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 border border-stone-700 px-7 py-4 text-sm uppercase tracking-[0.15em] text-stone-300 transition hover:border-amber-500/60 hover:text-amber-400 sm:w-auto"

@@ -28,8 +28,8 @@ const LINKS: {
 }[] = [
   {
     label: "Lee el prólogo y los 10 primeros capítulos gratis",
-    sub: "Sin email, sin compra — directo a leer",
-    href: "https://read.amazon.com/kp/embed?asin=B0GZVQL88V&asin=B0GZVQL88V&preview=newtab&linkCode=kpe",
+    sub: "En Amazon — pulsa \"Leer muestra\" bajo la portada",
+    href: "https://www.amazon.es/dp/B0GZVQL88V",
     external: true,
     icon: "pages",
     highlight: true,
