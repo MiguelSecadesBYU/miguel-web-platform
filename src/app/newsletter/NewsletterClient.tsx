@@ -51,12 +51,29 @@ export default function NewsletterClient() {
           <h1 className="mb-6 text-center font-serif text-4xl font-light leading-tight md:text-5xl">
             Historias que no caben en las páginas
           </h1>
-          <p className="mb-12 text-center text-base leading-relaxed text-stone-400">
-            Apúntate para recibir novedades sobre{" "}
-            <em className="text-stone-300">El Anillo de Salomón</em>,
-            curiosidades históricas, el proceso de escritura y lo que viene
-            después. Sin spam. Solo cuando haya algo que merezca la pena contar.
+          <p className="mb-6 text-center text-base leading-relaxed text-stone-400">
+            Apúntate y recibe el <em className="text-stone-300">Archivo Ballester nº1</em>:
+            el expediente con lo real y lo ficticio de{" "}
+            <em className="text-stone-300">El Anillo de Salomón</em> — el Anillo, las
+            Clavículas de Salomón, el Arca de la Alianza, y un mapa con la ruta
+            completa de la investigación.
           </p>
+
+          {/* Callout del incentivo */}
+          <div className="mb-10 border border-stone-800 bg-black/30 p-5 text-center">
+            <p className="mb-1 text-xs uppercase tracking-[0.2em] text-amber-500">
+              Al suscribirte, recibes
+            </p>
+            <p className="font-serif text-lg font-light text-stone-200">
+              El Archivo Ballester nº1
+            </p>
+            <p className="mt-2 text-xs leading-relaxed text-stone-500">
+              Y después, solo cuando haya algo que merezca la pena contar: curiosidades
+              históricas, el proceso de escritura, y noticias de{" "}
+              <em className="text-stone-400">El Último Harúspice</em> antes que nadie.
+              Sin spam.
+            </p>
+          </div>
 
           {status === "success" ? (
             <div className="border border-amber-500/30 bg-amber-500/5 p-10 text-center">
@@ -64,7 +81,7 @@ export default function NewsletterClient() {
                 ¡Bienvenido a bordo!
               </p>
               <p className="text-sm text-stone-400">
-                Ya estás suscrito. Pronto tendrás noticias.
+                Revisa tu correo: el Archivo Ballester está de camino.
               </p>
             </div>
           ) : (
