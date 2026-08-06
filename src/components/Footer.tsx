@@ -38,11 +38,11 @@ const socialLinks = [
 const trustLogos = [
   {
     label: "Asociación de Escritores de Asturias",
-    href: "#", // TODO: pon aquí la URL real de la AEA
+    href: "https://www.escritoresdeasturias.es/", 
     src: "/logos/aea.png",
     width: 140,
     height: 30,
-    card: false, // el PNG ya es blanco/negro sobre transparente, funciona directo en fondo oscuro
+    card: false, 
   },
   {
     label: "CEDRO",
