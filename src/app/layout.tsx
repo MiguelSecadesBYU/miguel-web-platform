@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Miguel Secades · Autor",
     description:
-      "Autor de El Anillo de Salomón. Thriller arqueológico desde Madrid hasta Jerusalén, Babilonia y Axum.",
+      "Autor de El Anillo de Salomón. Thriller arqueológico desde Gijón hasta Jerusalén, Babilonia y Axum.",
     url: "https://miguelsecades.com",
     siteName: "Miguel Secades",
     locale: "es_ES",
