@@ -38,11 +38,11 @@ const socialLinks = [
 const trustLogos = [
   {
     label: "Asociación de Escritores de Asturias",
-    href: "https://www.escritoresdeasturias.es/", 
+    href: "https://www.escritoresdeasturias.es/",
     src: "/logos/aea.png",
     width: 140,
     height: 30,
-    card: false, 
+    card: false,
   },
   {
     label: "CEDRO",
@@ -57,7 +57,7 @@ const trustLogos = [
 export default function Footer() {
   return (
     <footer className="border-t border-stone-800 bg-[#090909] text-stone-300">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
+      <div className="mx-auto grid max-w-5xl gap-12 px-6 py-16 md:grid-cols-3">
 
         {/* BRAND */}
         <div>
@@ -109,47 +109,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* EL LIBRO */}
-        <div>
-          <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-amber-500">
-            El libro
-          </h3>
-          <p className="mb-5 font-serif text-base font-light leading-snug text-stone-300">
-            El Anillo de Salomón
-          </p>
-          <p className="mb-6 text-sm leading-6 text-stone-500">
-            Thriller arqueológico. Disponible en Amazon en ebook y tapa blanda.
-          </p>
-          <ul className="space-y-3 text-sm">
-            <li>
-              <Link href="/books" className="text-stone-400 transition hover:text-amber-400">
-                Ver ficha del libro →
-              </Link>
-            </li>
-            <li>
-              <a href="https://www.amazon.es/dp/B0H14NRP92" target="_blank" rel="noopener noreferrer"
-                className="text-stone-400 transition hover:text-amber-400">
-                Comprar tapa blanda →
-              </a>
-            </li>
-            <li>
-              <a href="https://www.amazon.es/dp/B0GZVQL88V" target="_blank" rel="noopener noreferrer"
-                className="text-stone-400 transition hover:text-amber-400">
-                Comprar ebook Kindle →
-              </a>
-            </li>
-          </ul>
-        </div>
-
         {/* NEWSLETTER */}
         <div>
           <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-amber-500">
             Newsletter
           </h3>
           <p className="mb-6 text-sm leading-7 text-stone-400">
-            Historias que no caben en las páginas. Novedades, artículos y
-            contenido exclusivo sobre el universo de{" "}
-            <em>El Anillo de Salomón</em>.
+            Apúntate y recibe el <em>Archivo Ballester nº1</em>: lo real y lo
+            ficticio de <em>El Anillo de Salomón</em>, directo a tu correo.
           </p>
           <Link
             href="/newsletter"
