@@ -41,13 +41,13 @@ export default function BooksPage() {
             Para lectores de Dan Brown, Javier Sierra y Steve Berry
           </p>
 
-          {/* Hook emocional */}
+          {/* Hook emocional — nueva frase más impactante */}
           <p className="mb-6 text-lg leading-relaxed text-stone-300 sm:mb-8 sm:text-xl">
             Un thriller arqueológico trepidante donde la historia más antigua
             del mundo se convierte en la amenaza más peligrosa del presente.
           </p>
 
-          {/* Sinopsis */}
+          {/* Sinopsis con tensión narrativa mejorada */}
           <div className="mb-8 space-y-4 border-l border-amber-500/40 pl-5 text-stone-400 sm:mb-10 sm:pl-6">
             <p>
               Un antiguo papiro hallado en Oriente Próximo revela la pista de
@@ -57,7 +57,7 @@ export default function BooksPage() {
             </p>
             <p>
               El arqueólogo Álvaro Ballester y Daniela Gil se lanzan a una
-              carrera contrarreloj desde Madrid hasta Jerusalén,
+              carrera contrarreloj desde Madrid hasta los archivos del Vaticano,
               las ruinas de Babilonia y la mítica Axum. Cada descubrimiento los
               acerca a una verdad que alguien lleva siglos ocultando.
             </p>
@@ -87,7 +87,7 @@ export default function BooksPage() {
             </div>
           </div>
 
-          {/* BOTONES DE COMPRA */}
+          {/* BOTONES DE COMPRA — con más urgencia */}
           <div className="mb-5">
             <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">
               Disponible ahora en Amazon
@@ -152,63 +152,58 @@ export default function BooksPage() {
             <p className="mb-4 text-xs uppercase tracking-[0.25em] text-stone-500">
               Lo que dicen los lectores
             </p>
-            <div className="space-y-3">
+            <div className="grid gap-4 sm:grid-cols-2">
 
-              {/* Reseña 1 — Los susurros del papel */}
+              {/* Reseña 1 */}
               <a
                 href="https://vm.tiktok.com/ZNR3DokgU/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
+                className="group flex flex-col border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
               >
-                <div className="mb-4 flex gap-1">
+                <div className="mb-3 flex gap-1">
                   {[...Array(4)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-500">
+                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5 text-amber-500">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   ))}
                 </div>
-                <p className="mb-4 font-serif text-base italic leading-relaxed text-stone-300">
+                <p className="mb-4 grow font-serif text-sm italic leading-relaxed text-stone-300">
                   "Un excelente comienzo para una saga que demuestra que, incluso
                   tras los misterios más antiguos, siempre puede haber una puerta
                   esperando a ser abierta."
                 </p>
                 <div className="flex items-center justify-between">
-                  <p className="text-xs uppercase tracking-[0.2em] text-stone-600">
+                  <p className="text-xs uppercase tracking-[0.18em] text-stone-600">
                     Los susurros del papel · TikTok
                   </p>
-                  <span className="text-xs uppercase tracking-[0.2em] text-stone-700 transition group-hover:text-amber-500">
-                    Ver reseña →
-                  </span>
+                  <span className="text-xs text-stone-700 transition group-hover:text-amber-500">→</span>
                 </div>
               </a>
 
-              {/* Reseña 2 — Arina entre libros */}
+              {/* Reseña 2 */}
               <a
-                href="https://vm.tiktok.com/ZGd9gPJxu/"
+                href="https://www.tiktok.com/@giorgina7270/video/7684310084326919426"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
+                className="group flex flex-col border border-stone-800 bg-black/30 p-6 transition hover:border-amber-500/30"
               >
-                <div className="mb-4 flex gap-1">
-                  {[...Array(4)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-500">
+                <div className="mb-3 flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5 text-amber-500">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   ))}
                 </div>
-                <p className="mb-4 font-serif text-base italic leading-relaxed text-stone-300">
-                  "Este thriller me ha tenido enganchada desde el inicio hasta el final.
-                  Hace pasar a los distintos personajes por diferentes situaciones que te
-                  hacen estar en tensión. Espero leer más sobre estos personajes."
+                <p className="mb-4 grow font-serif text-sm italic leading-relaxed text-stone-300">
+                  "No solo lees los escenarios, los atraviesas; no solo observas
+                  el peligro, lo sientes acercarse."
                 </p>
                 <div className="flex items-center justify-between">
-                  <p className="text-xs uppercase tracking-[0.2em] text-stone-600">
-                    Arina entre libros · TikTok
+                  <p className="text-xs uppercase tracking-[0.18em] text-stone-600">
+                    Giorgina · TikTok
                   </p>
-                  <span className="text-xs uppercase tracking-[0.2em] text-stone-700 transition group-hover:text-amber-500">
-                    Ver reseña →
-                  </span>
+                  <span className="text-xs text-stone-700 transition group-hover:text-amber-500">→</span>
                 </div>
               </a>
 
@@ -218,7 +213,7 @@ export default function BooksPage() {
           {/* LEER FRAGMENTO */}
           <div className="mb-5">
             <a
-              href="https://www.amazon.es/dp/B0GZVQL88V"
+              href="https://read.amazon.com/sample/B0GZVQL88V"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 border border-stone-700 px-7 py-4 text-sm uppercase tracking-[0.15em] text-stone-300 transition hover:border-amber-500/60 hover:text-amber-400 sm:w-auto"
