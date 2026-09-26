@@ -19,8 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
+      changeFrequency: "yearly",
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/blog`,
@@ -31,20 +31,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/blog/anillo-de-salomon-historia-poderes-leyenda`,
       lastModified: new Date("2026-06-01"),
-      changeFrequency: "monthly",
+      changeFrequency: "yearly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/arca-de-la-alianza-misterio-historia`,
       lastModified: new Date("2026-06-01"),
-      changeFrequency: "monthly",
+      changeFrequency: "yearly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/como-nacio-el-anillo-de-salomon`,
       lastModified: new Date("2026-06-01"),
-      changeFrequency: "monthly",
+      changeFrequency: "yearly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/templo-de-salomon-historia-secretos-misterio`,
+      lastModified: new Date("2026-09-26"),
+      changeFrequency: "yearly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/newsletter`,
