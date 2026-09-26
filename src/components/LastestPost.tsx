@@ -2,6 +2,15 @@ import Link from "next/link";
 
 const latestPosts = [
   {
+    slug: "templo-de-salomon-historia-secretos-misterio",
+    category: "Investigación",
+    title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
+    excerpt:
+      "El edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo — en sus ruinas, en sus leyendas, en las logias masónicas.",
+    date: "Septiembre 2026",
+    readTime: "13 min",
+  },
+  {
     slug: "como-nacio-el-anillo-de-salomon",
     category: "Proceso creativo",
     title: "Cómo nació El Anillo de Salomón",
@@ -9,15 +18,6 @@ const latestPosts = [
       "Tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos. Esta es la historia detrás de la novela.",
     date: "Junio 2026",
     readTime: "8 min",
-  },
-  {
-    slug: "arca-de-la-alianza-misterio-historia",
-    category: "Investigación",
-    title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
-    excerpt:
-      "Desapareció hace más de 2.600 años. Nadie sabe dónde está. Y sin embargo, hay quien afirma que la tiene. Que la ha visto. Que la custodia con su vida.",
-    date: "Junio 2026",
-    readTime: "14 min",
   },
 ];
 
