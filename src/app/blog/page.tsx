@@ -1,6 +1,22 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tras las páginas",
+  description:
+    "Blog de Miguel Secades García. Investigación histórica, proceso creativo y el universo de El Anillo de Salomón.",
+};
 
 const posts = [
+  {
+    slug: "templo-de-salomon-historia-secretos-misterio",
+    category: "Investigación",
+    title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
+    excerpt:
+      "El edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo — en sus ruinas, en sus leyendas, en las logias masónicas.",
+    date: "Septiembre 2026",
+    ready: true,
+  },
   {
     slug: "como-nacio-el-anillo-de-salomon",
     category: "Proceso creativo",
@@ -30,14 +46,6 @@ const posts = [
   },
 ];
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Tras las páginas",
-  description:
-    "Blog de Miguel Secades García. Investigación histórica, proceso creativo y el universo de El Anillo de Salomón.",
-};
-
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-[#070707] px-6 py-28 text-white lg:px-12">
@@ -56,14 +64,14 @@ export default function BlogPage() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <article className="group h-full border border-stone-800 bg-black/40 p-7 transition hover:border-amber-500/60">
                 <p className="mb-4 text-xs uppercase tracking-[0.25em] text-amber-500">
                   {post.category}
                 </p>
-                <h2 className="mb-5 font-serif text-2xl font-light leading-snug text-white group-hover:text-amber-400">
+                <h2 className="mb-5 font-serif text-xl font-light leading-snug text-white group-hover:text-amber-400">
                   {post.title}
                 </h2>
                 <p className="mb-8 text-sm leading-7 text-stone-400">
