@@ -48,10 +48,11 @@ export default function PostTemploSalomon() {
 
           <p className="mb-10 text-lg leading-relaxed text-stone-400">
             Fue el edificio más sagrado que jamás construyó el pueblo de Israel.
-            Albergó el objeto más poderoso de la antigüedad. Lo destruyeron en
+            Albergó uno de los objetos más poderosos y venerados de la tradición 
+            bíblica: el Arca de la Alianza. Lo destruyeron en
             586 a.C. Y desde entonces, el mundo no ha dejado de buscarlo —
-            en sus ruinas, en sus leyendas, en los rituales que lo evocan cada
-            noche en miles de logias masónicas de todo el mundo.
+            en sus ruinas, en sus leyendas, en los rituales y símbolos de las 
+            logias masónicas de todo el mundo.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 border-t border-stone-800 pt-6 text-xs uppercase tracking-[0.2em] text-stone-600">
@@ -110,7 +111,8 @@ export default function PostTemploSalomon() {
             <p>
               Las dimensiones del Templo, tal como las describe el Libro de los
               Reyes, eran extraordinarias para su época: aproximadamente 27
-              metros de largo, 9 de ancho y 13 de alto. No era un edificio
+              metros de largo, 9 de ancho y 14 de alto (según las dimensiones 
+              descritas en 1 Reyes 6). No era un edificio
               masivo en términos modernos, pero su riqueza y su precisión
               constructiva no tenían paralelo en la región.
             </p>
@@ -397,9 +399,10 @@ export default function PostTemploSalomon() {
               templo de Ain Dara, en Siria, descubierto en los años 80 del
               siglo XX. Sus dimensiones, su diseño tripartito y su decoración
               con querubines y leones son extraordinariamente similares a las
-              descripciones bíblicas del Templo de Salomón, confirmando que
-              el tipo arquitectónico descrito en la Biblia era real y conocido
-              en la región.
+              descripciones bíblicas del Templo de Salomón, proporcionando un 
+              importante paralelo arqueológico que demuestra que el tipo de 
+              arquitectura descrito en el relato bíblico encaja con una tradición
+               arquitectónica conocida en el Levante de la época.
             </p>
           </Section>
 
