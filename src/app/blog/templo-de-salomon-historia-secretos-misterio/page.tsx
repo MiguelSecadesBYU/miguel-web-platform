@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
   description:
     "El Templo de Salomón fue el edificio más sagrado de la antigüedad. Descubre su construcción, sus tesoros perdidos, la leyenda de Hiram Abif y su influencia en la masonería.",
+  openGraph: {
+    title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
+    description:
+      "Fue el edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo.",
+    url: "https://www.miguelsecades.com/blog/templo-de-salomon-historia-secretos-misterio",
+    images: [{ url: "/images/books/Portada-El_Anillo_de_Salomon.jpg", width: 1000, height: 1500, alt: "El Anillo de Salomón — Miguel Secades" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
+    description: "El edificio más sagrado de la antigüedad. Sus columnas, sus tesoros perdidos y su influencia masónica.",
+    images: ["/images/books/Portada-El_Anillo_de_Salomon.jpg"],
+  },
+  alternates: { canonical: "https://www.miguelsecades.com/blog/templo-de-salomon-historia-secretos-misterio" },
 };
 
 export default function PostTemploSalomon() {

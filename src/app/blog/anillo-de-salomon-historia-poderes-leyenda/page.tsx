@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
   description:
     "Descubre la verdad detrás del Anillo de Salomón: su origen histórico, sus poderes legendarios sobre demonios y por qué sigue fascinando al mundo.",
+  openGraph: {
+    title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
+    description:
+      "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años sin aparecer.",
+    url: "https://www.miguelsecades.com/blog/anillo-de-salomon-historia-poderes-leyenda",
+    images: [{ url: "/images/books/Portada-El_Anillo_de_Salomon.jpg", width: 1000, height: 1500, alt: "El Anillo de Salomón — Miguel Secades" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
+    description: "Un objeto grabado por Dios, entregado por un arcángel. ¿Existió realmente? La historia completa.",
+    images: ["/images/books/Portada-El_Anillo_de_Salomon.jpg"],
+  },
+  alternates: { canonical: "https://www.miguelsecades.com/blog/anillo-de-salomon-historia-poderes-leyenda" },
 };
 
 export default function PostAnilloSalomon() {
@@ -379,7 +393,7 @@ export default function PostAnilloSalomon() {
               <p>
                 ¿Qué pasaría si un arqueólogo encontrara un papiro sumerio que
                 mencionara el objeto? ¿Y si las pistas lo llevaran desde Madrid
-                hasta la ciudad santa de Jerusalén, las ruinas de Babilonia y la
+                hasta los archivos del Vaticano, las ruinas de Babilonia y la
                 mítica Axum —la ciudad etíope donde algunos sitúan el Arca de la
                 Alianza—? ¿Y si no fuera el único en buscarlo?
               </p>

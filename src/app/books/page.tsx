@@ -2,9 +2,32 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Libros",
+  title: "El Anillo de Salomón",
   description:
-    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico disponible en Amazon en ebook y tapa blanda. Para lectores de Dan Brown, Javier Sierra y Steve Berry.",
+    "El Anillo de Salomón, de Miguel Secades García. Thriller arqueológico para lectores de Dan Brown, Javier Sierra y Matilde Asensi. Disponible en Amazon en ebook y tapa blanda.",
+  openGraph: {
+    title: "El Anillo de Salomón — Miguel Secades",
+    description:
+      "Un antiguo papiro. Una carrera desde Madrid hasta Axum. Y un secreto que alguien lleva siglos ocultando. Thriller arqueológico disponible en Amazon.",
+    url: "https://www.miguelsecades.com/books",
+    images: [
+      {
+        url: "/images/books/Portada-El_Anillo_de_Salomon.jpg",
+        width: 1000,
+        height: 1500,
+        alt: "El Anillo de Salomón — Miguel Secades",
+      },
+    ],
+  },
+  twitter: {
+    title: "El Anillo de Salomón — Miguel Secades",
+    description:
+      "Un antiguo papiro. Una carrera desde Madrid hasta Axum. Thriller arqueológico disponible en Amazon.",
+    images: ["/images/books/Portada-El_Anillo_de_Salomon.jpg"],
+  },
+  alternates: {
+    canonical: "https://www.miguelsecades.com/books",
+  },
 };
 
 export default function BooksPage() {
@@ -245,5 +268,4 @@ export default function BooksPage() {
       </section>
     </main>
   );
-  
 }

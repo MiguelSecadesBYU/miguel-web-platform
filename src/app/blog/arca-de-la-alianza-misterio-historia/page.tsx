@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
   description:
     "El Arca de la Alianza desapareció hace 2.600 años. Descubre su historia, sus poderes sobrenaturales y las teorías sobre su paradero, incluida la pista que lleva a Axum.",
+  openGraph: {
+    title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
+    description:
+      "Desapareció en 586 a.C. Nadie sabe dónde está. Y sin embargo, hay quien afirma que la tiene. Que la custodia con su vida.",
+    url: "https://www.miguelsecades.com/blog/arca-de-la-alianza-misterio-historia",
+    images: [{ url: "/images/books/Portada-El_Anillo_de_Salomon.jpg", width: 1000, height: 1500, alt: "El Anillo de Salomón — Miguel Secades" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
+    description: "Desapareció hace 2.600 años. Las teorías sobre su paradero, incluida Axum.",
+    images: ["/images/books/Portada-El_Anillo_de_Salomon.jpg"],
+  },
+  alternates: { canonical: "https://www.miguelsecades.com/blog/arca-de-la-alianza-misterio-historia" },
 };
 
 export default function PostArcaAlianza() {

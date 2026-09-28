@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Cómo nació El Anillo de Salomón: la historia detrás de la novela",
   description:
     "Miguel Secades cuenta cómo tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos dieron lugar a su primera novela.",
+  openGraph: {
+    title: "Cómo nació El Anillo de Salomón",
+    description:
+      "Tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos. Esta es la historia detrás de la novela.",
+    url: "https://www.miguelsecades.com/blog/como-nacio-el-anillo-de-salomon",
+    images: [{ url: "/images/books/Portada-El_Anillo_de_Salomon.jpg", width: 1000, height: 1500, alt: "El Anillo de Salomón — Miguel Secades" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cómo nació El Anillo de Salomón",
+    description: "Tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos.",
+    images: ["/images/books/Portada-El_Anillo_de_Salomon.jpg"],
+  },
+  alternates: { canonical: "https://www.miguelsecades.com/blog/como-nacio-el-anillo-de-salomon" },
 };
 
 export default function PostComoNacio() {
@@ -229,7 +243,7 @@ export default function PostComoNacio() {
           <Section>
             <H2>El regreso — y el final</H2>
             <p>
-              En 2025 lo retomé. No sé exactamente qué cambió. Quizás la
+              En 2024 lo retomé. No sé exactamente qué cambió. Quizás la
               perspectiva que da el tiempo. Quizás el cansancio de dejar algo
               a medias. Quizás simplemente la certeza de que si no lo terminaba
               entonces, no lo iba a terminar nunca.
