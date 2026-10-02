@@ -227,8 +227,8 @@ export default function PostTemplarios() {
               depositaba su oro en la encomienda templaria de su ciudad, recibía
               un documento cifrado con el valor del depósito, y al llegar a
               Jerusalén lo canjeaba por la cantidad equivalente en la encomienda
-              local. Era, en esencia, una letra de cambio — el primer cheque de
-              viaje de la historia.
+              local. En cierto sentido, era un antecedente de los modernos sistemas 
+              de transferencia de dinero.
             </p>
 
             <div className="my-8 space-y-5">
@@ -293,6 +293,12 @@ export default function PostTemplarios() {
               con los supervivientes templarios.
             </p>
 
+           <p>
+            Nada de esto demuestra que los Templarios encontraran el Arca de la Alianza.
+             La hipótesis pertenece al terreno de la tradición y la especulación histórica, 
+             no al de la evidencia arqueológica demostrada.
+            </p> 
+
             <H3>El Santo Grial</H3>
             <p>
               La asociación entre los Templarios y el Santo Grial es tan antigua
@@ -348,9 +354,10 @@ export default function PostTemplarios() {
               bajo tortura. Muchos se retractaron después.
             </p>
             <p>
-              Las motivaciones reales de Felipe IV son transparentes para
-              cualquier historiador: la Corona francesa estaba endeudada con
-              los Templarios hasta el cuello, y el rey necesitaba sus riquezas.
+              La enorme deuda de Felipe IV con los Templarios es uno de los factores 
+              económicos que suelen señalarse para explicar la actuación de la Corona francesa.
+              Historiadores y divulgadores han debatido cuánto pesaron esas circunstancias 
+              económicas frente a las motivaciones políticas y religiosas.
               El papa Clemente V — elegido con el apoyo decisivo de Felipe y
               que había trasladado la sede papal a Aviñón, dentro de la esfera
               de influencia francesa — cedió a las presiones del rey y disolvió
