@@ -9,11 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "caballeros-templarios-historia-secretos-maldicion",
+    category: "Investigación",
+    title: "Los Caballeros Templarios: historia, secretos y la maldición que cambió el mundo",
+    excerpt:
+      "Nueve caballeros en Jerusalén. Dos siglos de poder sin precedentes. Una caída en viernes 13. Y una maldición pronunciada en la hoguera que todavía resuena.",
+    date: "Octubre 2026",
+    ready: true,
+  },
+  {
     slug: "templo-de-salomon-historia-secretos-misterio",
     category: "Investigación",
     title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
     excerpt:
-      "El edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo — en sus ruinas, en sus leyendas, en las logias masónicas.",
+      "El edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo.",
     date: "Septiembre 2026",
     ready: true,
   },
@@ -31,7 +40,7 @@ const posts = [
     category: "Investigación",
     title: "El Arca de la Alianza: el mayor misterio sin resolver de la historia",
     excerpt:
-      "Desapareció hace más de 2.600 años. Nadie sabe dónde está. Y sin embargo, hay quien afirma que la tiene. Que la ha visto. Que la custodia con su vida.",
+      "Desapareció hace más de 2.600 años. Nadie sabe dónde está. Y sin embargo, hay quien afirma que la tiene. Que la custodia con su vida.",
     date: "Junio 2026",
     ready: true,
   },
@@ -40,7 +49,7 @@ const posts = [
     category: "Investigación",
     title: "El Anillo de Salomón: historia, poderes y el misterio que nadie ha resuelto",
     excerpt:
-      "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo. Y sigue sin aparecer.",
+      "Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo.",
     date: "Junio 2026",
     ready: true,
   },
@@ -64,7 +73,7 @@ export default function BlogPage() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <article className="group h-full border border-stone-800 bg-black/40 p-7 transition hover:border-amber-500/60">

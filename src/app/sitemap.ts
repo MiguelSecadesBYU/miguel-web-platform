@@ -7,13 +7,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── PÁGINAS PRINCIPALES ──
     {
       url: baseUrl,
-      lastModified: new Date("2026-09-26"), // Actualizar al hacer cambios en la home
+      lastModified: new Date("2026-10-02"),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/books`,
-      lastModified: new Date("2026-09-26"), // Actualizar al añadir reseñas o cambios
+      lastModified: new Date("2026-09-26"),
       changeFrequency: "monthly",
       priority: 0.9,
     },
@@ -27,8 +27,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── BLOG ──
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date("2026-09-26"), // Actualizar cada vez que publiques un artículo nuevo
+      lastModified: new Date("2026-10-02"),
       changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/caballeros-templarios-historia-secretos-maldicion`,
+      lastModified: new Date("2026-10-02"),
+      changeFrequency: "yearly",
       priority: 0.8,
     },
     {

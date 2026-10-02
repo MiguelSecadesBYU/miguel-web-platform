@@ -2,22 +2,22 @@ import Link from "next/link";
 
 const latestPosts = [
   {
+    slug: "caballeros-templarios-historia-secretos-maldicion",
+    category: "Investigación",
+    title: "Los Caballeros Templarios: historia, secretos y la maldición que cambió el mundo",
+    excerpt:
+      "Nueve caballeros en Jerusalén. Dos siglos de poder sin precedentes. Una caída en viernes 13. Y una maldición pronunciada en la hoguera que todavía resuena.",
+    date: "Octubre 2026",
+    readTime: "15 min",
+  },
+  {
     slug: "templo-de-salomon-historia-secretos-misterio",
     category: "Investigación",
     title: "El Templo de Salomón: historia, secretos y el misterio que sigue vivo",
     excerpt:
-      "El edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo — en sus ruinas, en sus leyendas, en las logias masónicas.",
+      "El edificio más sagrado de la antigüedad. Albergó el Arca. Lo destruyeron en 586 a.C. Y desde entonces el mundo no ha dejado de buscarlo.",
     date: "Septiembre 2026",
     readTime: "13 min",
-  },
-  {
-    slug: "como-nacio-el-anillo-de-salomon",
-    category: "Proceso creativo",
-    title: "Cómo nació El Anillo de Salomón",
-    excerpt:
-      "Tres operaciones de corazón, una jubilación anticipada y una fascinación por los símbolos. Esta es la historia detrás de la novela.",
-    date: "Junio 2026",
-    readTime: "8 min",
   },
 ];
 
