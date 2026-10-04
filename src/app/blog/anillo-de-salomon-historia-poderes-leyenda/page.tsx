@@ -30,7 +30,6 @@ export default function PostAnilloSalomon() {
         <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-amber-500/5 blur-[140px]" />
         <div className="mx-auto max-w-3xl">
 
-          {/* Breadcrumb */}
           <div className="mb-8 flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-stone-600">
             <Link href="/blog" className="transition hover:text-amber-500">
               Tras las páginas
@@ -48,16 +47,15 @@ export default function PostAnilloSalomon() {
           </h1>
 
           <p className="mb-10 text-lg leading-relaxed text-stone-400">
-            Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar 
-            la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo. 
+            Un objeto grabado por Dios, entregado por un arcángel, capaz de doblegar
+            la voluntad de los demonios. Lleva más de dos mil años fascinando al mundo.
             Y sigue sin aparecer.
           </p>
 
-          {/* Meta del post */}
           <div className="flex flex-wrap items-center gap-6 border-t border-stone-800 pt-6 text-xs uppercase tracking-[0.2em] text-stone-600">
             <span>Miguel Secades</span>
             <span>·</span>
-            <span>Junio 2025</span>
+            <span>Junio 2026</span>
             <span>·</span>
             <span>Lectura: 12 min</span>
           </div>
@@ -67,6 +65,31 @@ export default function PostAnilloSalomon() {
       {/* ── CONTENIDO ── */}
       <article className="px-6 py-16 lg:px-12">
         <div className="mx-auto max-w-3xl">
+
+          {/* Índice de contenidos */}
+          <nav className="mb-12 border border-amber-500/20 bg-amber-500/5 p-6">
+            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-amber-500">
+              En este artículo
+            </p>
+            <ol className="space-y-2 text-sm text-stone-400">
+              {[
+                ["Quién fue realmente el rey Salomón", "#salomon"],
+                ["El origen del Anillo: textos que la Biblia no incluyó", "#origen"],
+                ["Los poderes del Anillo según las distintas tradiciones", "#poderes"],
+                ["Los demonios que Salomón sometió", "#demonios"],
+                ["Lo que dice la arqueología", "#arqueologia"],
+                ["El Anillo en la cultura popular", "#cultura"],
+                ["Curiosidades que quizás no conocías", "#curiosidades"],
+                ["Preguntas frecuentes", "#faq"],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <a href={href} className="transition hover:text-amber-400">
+                    {label} →
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
 
           {/* Intro */}
           <div className="mb-12 space-y-5 text-lg leading-relaxed text-stone-300">
@@ -93,8 +116,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Sección 1 */}
-          <Section>
+          <Section id="salomon">
             <H2>Quién fue realmente el rey Salomón</H2>
             <p>
               Antes de hablar del anillo, necesitamos hablar del hombre.
@@ -132,8 +154,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Sección 2 */}
-          <Section>
+          <Section id="origen">
             <H2>El origen del Anillo de Salomón: textos que la Biblia nunca incluyó</H2>
             <p>
               La historia del anillo no aparece en el Antiguo Testamento ni en
@@ -163,7 +184,6 @@ export default function PostAnilloSalomon() {
               a trabajar en la construcción del Templo.
             </p>
 
-            {/* Cita destacada */}
             <blockquote className="my-10 border-l-2 border-amber-500 pl-8">
               <p className="font-serif text-xl font-light italic leading-relaxed text-stone-200">
                 "Testamento de Salomón, hijo de David, quien fue rey en Jerusalén
@@ -201,8 +221,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Sección 3 — Poderes */}
-          <Section>
+          <Section id="poderes">
             <H2>Los poderes del Anillo de Salomón según las distintas tradiciones</H2>
             <p>
               A lo largo de los siglos, diferentes culturas han atribuido al
@@ -254,8 +273,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Sección 4 — Demonios */}
-          <Section>
+          <Section id="demonios">
             <H2>Los demonios que Salomón sometió: los más conocidos</H2>
             <p>
               Si el anillo era el instrumento, los demonios eran los
@@ -281,8 +299,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Sección 5 — Arqueología */}
-          <Section>
+          <Section id="arqueologia">
             <H2>Lo que dice la arqueología (y lo que no dice)</H2>
             <p>
               Seamos honestos: no existe evidencia arqueológica del Anillo de
@@ -305,8 +322,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Sección 6 — Cultura popular */}
-          <Section>
+          <Section id="cultura">
             <H2>El Anillo de Salomón en la cultura popular: de Las mil y una noches a Dan Brown</H2>
             <p>La influencia del mito es enorme y llega hasta hoy:</p>
             <ul className="my-4 space-y-3 text-stone-400">
@@ -320,8 +336,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* Curiosidades */}
-          <Section>
+          <Section id="curiosidades">
             <H2>Curiosidades sobre el Anillo de Salomón que quizás no conocías</H2>
             <div className="my-6 space-y-5">
               {[
@@ -340,8 +355,7 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* FAQ */}
-          <Section>
+          <Section id="faq">
             <H2>Preguntas frecuentes sobre el Anillo de Salomón</H2>
             <div className="my-6 space-y-6">
               {[
@@ -376,7 +390,6 @@ export default function PostAnilloSalomon() {
 
           <Divider />
 
-          {/* CTA — ¿Y si la leyenda fuera real? */}
           <section className="my-12 border border-amber-500/20 bg-amber-500/5 p-10">
             <p className="mb-4 text-xs uppercase tracking-[0.35em] text-amber-500">
               ¿Y si la leyenda fuera real?
@@ -402,32 +415,23 @@ export default function PostAnilloSalomon() {
               </p>
             </div>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="https://www.amazon.es/dp/B0H14NRP92"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center border border-amber-500/80 px-7 py-3 text-center text-xs uppercase tracking-[0.18em] text-amber-400 transition hover:bg-amber-500 hover:text-black"
-              >
+              <a href="https://www.amazon.es/dp/B0H14NRP92" target="_blank" rel="noopener noreferrer"
+                className="flex items-center justify-center border border-amber-500/80 px-7 py-3 text-center text-xs uppercase tracking-[0.18em] text-amber-400 transition hover:bg-amber-500 hover:text-black">
                 Tapa blanda en Amazon
               </a>
-              <a
-                href="https://www.amazon.es/dp/B0GZVQL88V"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center border border-stone-700 px-7 py-3 text-center text-xs uppercase tracking-[0.18em] text-stone-400 transition hover:border-amber-500/60 hover:text-amber-400"
-              >
+              <a href="https://www.amazon.es/dp/B0GZVQL88V" target="_blank" rel="noopener noreferrer"
+                className="flex items-center justify-center border border-stone-700 px-7 py-3 text-center text-xs uppercase tracking-[0.18em] text-stone-400 transition hover:border-amber-500/60 hover:text-amber-400">
                 Ebook Kindle
               </a>
             </div>
           </section>
 
-          {/* Volver al blog */}
-          <div className="mt-16 border-t border-stone-800 pt-10">
-            <Link
-              href="/blog"
-              className="text-sm uppercase tracking-[0.2em] text-stone-500 transition hover:text-amber-400"
-            >
+          <div className="mt-16 border-t border-stone-800 pt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <Link href="/blog" className="text-sm uppercase tracking-[0.2em] text-stone-500 transition hover:text-amber-400">
               ← Volver a Tras las páginas
+            </Link>
+            <Link href="/blog/arca-de-la-alianza-misterio-historia" className="text-sm uppercase tracking-[0.2em] text-stone-500 transition hover:text-amber-400">
+              Leer también: El Arca de la Alianza →
             </Link>
           </div>
 
@@ -437,10 +441,9 @@ export default function PostAnilloSalomon() {
   );
 }
 
-/* ── Componentes de tipografía internos ── */
 function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-5 mt-2 font-serif text-3xl font-light leading-snug text-stone-100">
+    <h2 className="mb-5 mt-2 scroll-mt-24 font-serif text-3xl font-light leading-snug text-stone-100">
       {children}
     </h2>
   );
@@ -454,8 +457,12 @@ function H3({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Section({ children }: { children: React.ReactNode }) {
-  return <section className="mb-4 space-y-5 text-base leading-relaxed text-stone-300">{children}</section>;
+function Section({ children, id }: { children: React.ReactNode; id?: string }) {
+  return (
+    <section id={id} className="mb-4 scroll-mt-24 space-y-5 text-base leading-relaxed text-stone-300">
+      {children}
+    </section>
+  );
 }
 
 function Divider() {
