@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── PÁGINAS PRINCIPALES ──
     {
       url: baseUrl,
-      lastModified: new Date("2026-10-02"),
+      lastModified: new Date("2026-10-11"),
       changeFrequency: "weekly",
       priority: 1,
     },
@@ -27,8 +27,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── BLOG ──
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date("2026-10-02"),
+      lastModified: new Date("2026-10-11"),
       changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/amorc-orden-rosacruz-historia-secretos`,
+      lastModified: new Date("2026-10-11"),
+      changeFrequency: "yearly",
       priority: 0.8,
     },
     {

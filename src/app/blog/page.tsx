@@ -9,6 +9,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "amorc-orden-rosacruz-historia-secretos",
+    category: "Investigación",
+    title: "La AMORC: la orden que custodia los secretos de la humanidad",
+    excerpt:
+      "Desde el Antiguo Egipto hasta el siglo XXI. La mayor organización rosacruz del mundo y el conocimiento que lleva siglos transmitiendo en silencio.",
+    date: "Octubre 2026",
+    ready: true,
+  },
+  {
     slug: "caballeros-templarios-historia-secretos-maldicion",
     category: "Investigación",
     title: "Los Caballeros Templarios: historia, secretos y la maldición que cambió el mundo",
